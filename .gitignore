@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# DADOS PESSOAIS E PROCESSOS REAIS — não versionar
+# ---------------------------------------------------------------------------
+# Documentos preenchidos com dados reais (CPF, nomes, matrículas funcionais,
+# e-mails institucionais, números de protocolo) e peças de processos de
+# contratação em andamento. Servem como referência local para a elaboração da
+# skill, mas não devem ser publicados.
+
+# Pasta de trabalho do processo em curso (DFD 254/2026, publicação de EPC e
+# rascunhos de ETP, TR e Justificativa com nomes da Equipe de Planejamento)
+teste/
+
+# Exemplos preenchidos com CPF, nomes e assinaturas de servidores
+modelos-outros/01. DFD_documento-de-formalizacao-da-demanda.docx
+modelos-outros/02. ETP_DEMAIS_CONTRATAÇÕES_TÓPICOS.docx
+modelos-outros/ETP_tic.docx
+modelos-outros/ETP_120195-000073-2025.pdf
+modelos-outros/Parecer Técnico_dispensa.docx
+modelos-outros/Parecer Técnico_inexigibilidade.docx
+modelos-outros/14. JUSTIFICATIVA PARA A ESCOLHA DO FORNECEDOR (enquad 14.133).docx
+
+# ---------------------------------------------------------------------------
+# CONFIGURAÇÃO LOCAL
+# ---------------------------------------------------------------------------
+.claude/settings.local.json
+
+# ---------------------------------------------------------------------------
+# DEPENDÊNCIAS
+# ---------------------------------------------------------------------------
+# Skill de terceiros instalada via `npx skills add`; a origem e a versão ficam
+# registradas em skills-lock.json, que é versionado. O instalador mantém duas
+# cópias (uma universal e uma para o Claude Code) — ambas são ignoradas.
+.agents/skills/skill-creator/
+.claude/skills/skill-creator/
+
+# ---------------------------------------------------------------------------
+# ARQUIVOS TEMPORÁRIOS
+# ---------------------------------------------------------------------------
+*.tmp
+*~
+~$*.docx
+~$*.xlsx
+Thumbs.db
+desktop.ini
+.DS_Store
