@@ -100,7 +100,7 @@ Antes de redigir, determine se o Parecer Técnico é exigido para a modalidade e
 - **Pregão**: não exigido — não ofereça para elaborar um Parecer Técnico neste caso.
 - **Concorrência**: incerto (o próprio usuário não soube confirmar) — pergunte a ele antes de assumir que é ou não exigido; não decida sozinho.
 
-Se exigido, leia `references/parecer-tecnico-topicos.md`, que traz a estrutura comum e as diferenças específicas entre dispensa (fundamentação no art. 75) e inexigibilidade (fundamentação no art. 74, com seção adicional de comprovação de exclusividade). Pergunte a modalidade e o inciso legal aplicável ao usuário, ou deduza do ETP se ele já tiver essa análise — não invente o enquadramento legal.
+Se exigido, leia `references/parecer-tecnico-topicos.md`, que traz a estrutura comum e, na seção "Enquadramento legal", uma tabela com cada um dos 5 incisos do art. 74 (inexigibilidade) e dos 18 incisos do art. 75 (dispensa) — cada inciso pede uma prova documental e uma seção extra do parecer diferentes (ex.: notória especialização exige currículo/portfólio e seção própria; exclusividade de fornecedor exige atestado de exclusividade; imóvel exige laudo de singularidade). Pergunte a modalidade **e o inciso exato** ao usuário, ou deduza do ETP se ele já tiver essa análise — nunca invente o enquadramento legal nem generalize "dispensa"/"inexigibilidade" sem o inciso.
 
 ### Passo 5: Documentos de menor importância
 
