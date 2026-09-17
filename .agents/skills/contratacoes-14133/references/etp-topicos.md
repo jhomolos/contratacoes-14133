@@ -8,8 +8,8 @@ Base legal: art. 18, §1º, da Lei 14.133/2021. A numeração e a redação abai
 1. **Descrição da necessidade da contratação**, considerado o problema a ser resolvido sob a perspectiva do interesse público. Não descreva a solução aqui — só o problema. Reaproveite a "Justificativa da necessidade" do DFD em vez de reescrever do zero.
 2. **Área requisitante** — unidade/setor/departamento que demanda a contratação (não previsto expressamente no art. 18 §1º, mas exigido pelo modelo do órgão).
 3. **Descrição dos Requisitos da Contratação**, incluindo prazos de garantia, vida útil do bem, regime de execução (contínuo/não contínuo), vedação de subcontratação quando aplicável, exigência ou dispensa de garantia contratual, e enquadramento no Catálogo Eletrônico de Padronização (CATMAT/CATSER) quando existir item padronizado correspondente.
-4. **Levantamento de Soluções / Mercado**, com a análise das alternativas possíveis e a justificativa técnica e econômica da escolha da solução — inclua evidências concretas (ex.: registros oficiais, páginas de referência) quando a escolha recair sobre um fornecedor específico.
-5. **Descrição da solução como um todo**, inclusive das exigências relacionadas à manutenção e à assistência técnica, quando for o caso. Se a contratação se enquadrar em hipótese de dispensa ou inexigibilidade, declare isso aqui com o dispositivo legal aplicável (ex.: art. 74, inciso III, da Lei 14.133/2021).
+4. **Levantamento de Soluções / Mercado**, com a análise das alternativas possíveis e a justificativa técnica e econômica da escolha da solução — inclua evidências concretas (ex.: registros oficiais, páginas de referência) quando a escolha recair sobre um fornecedor específico. **É aqui que se comprova a inviabilidade de competição** que fundamenta uma inexigibilidade do art. 74: quantos fornecedores foram procurados, o que a pesquisa encontrou. O Parecer Técnico depois invoca esse levantamento — ele não substitui a prova.
+5. **Descrição da solução como um todo**, inclusive das exigências relacionadas à manutenção e à assistência técnica, quando for o caso. Declare aqui a **modalidade e o enquadramento legal** definidos na triagem do Bloco 0 (ver `references/enquadramento-legal-triagem.md`), com **artigo, inciso e alínea** quando houver — ex.: "inexigibilidade, art. 74, III, 'f', da Lei nº 14.133/2021". Citar só o artigo é lacuna, não enquadramento.
 6. **Estimativa das Quantidades a Serem Contratadas**, acompanhada das memórias de cálculo e dos documentos que lhe dão suporte.
 7. **Estimativa do Valor da Contratação**, acompanhada dos preços unitários referenciais e do detalhamento de todos os custos incidentes.
 8. **Justificativa para o Parcelamento ou não da Solução.**
@@ -27,6 +27,18 @@ Base legal: art. 18, §1º, da Lei 14.133/2021. A numeração e a redação abai
 O DFD quase nunca traz contexto suficiente para um ETP defensável. Antes de escrever qualquer tópico, conduza esta entrevista com o usuário. Não presuma respostas: o IPP da AGU (ver `references/ipp-agu-orientacoes.md`) é explícito em que a necessidade "pode inclusive ser distinta a depender da finalidade do órgão, ainda que o objeto indicado pelo setor requisitante seja o mesmo" — ou seja, o mesmo objeto justifica-se de formas diferentes em contextos diferentes, e só o usuário conhece o dele.
 
 **Os blocos abaixo não são um checklist fixo a percorrer identicamente em toda contratação.** Vários itens só fazem sentido para determinada natureza de objeto — estão marcados como condicionais entre parênteses. Antes de entrevistar, identifique com o usuário se o objeto é bem ou serviço e, sendo serviço, de que natureza (curso/treinamento/capacitação, mão de obra dedicada, TI, obra, locação, etc.), e pule as perguntas cuja condição não se aplica. Perguntar sobre material didático ou certificado de conclusão numa aquisição de equipamentos, por exemplo, é sinal de entrevista mal calibrada — o objetivo é uma entrevista enxuta e pertinente, não exaustiva por hábito.
+
+**Bloco 0 — Modalidade e enquadramento legal (faça ANTES de todos os outros blocos)**
+
+Conduza a triagem completa de `references/enquadramento-legal-triagem.md`. Ela faz perguntas **de fato** (o que é o objeto, quanto vale, quantos fornecedores existem, quem é o contratado, há urgência) e conclui qual modalidade e qual dispositivo se aplicam — pregão, concorrência, concurso, leilão, diálogo competitivo, ou contratação direta com o inciso exato do art. 74 ou 75.
+
+Este bloco vem primeiro por três razões:
+
+- **O usuário não tem obrigação de conhecer a lei.** Nunca abra perguntando "qual é o enquadramento legal?" ou "é dispensa ou inexigibilidade?" — ele frequentemente não sabe, e um chute aqui contamina todos os documentos seguintes. Pergunte os fatos e apresente a conclusão para ele confirmar.
+- **É no ETP que a modalidade se define**, e o tópico 5 exige a declaração expressa do dispositivo. O TR (Passo 3) escolhe o modelo da AGU e as alternativas "OU" em função dessa definição, então não há como redigi-lo antes.
+- **O resultado da triagem pode dispensar o próprio ETP** — ver a seção "Quando o ETP pode ser dispensado" abaixo. Descobrir isso depois de conduzir a entrevista inteira é desperdício de trabalho do usuário.
+
+A triagem também define qual arquivo de referência usar (TIC vs. genérico) e quais dos blocos seguintes são pertinentes.
 
 **Bloco 1 — Necessidade e resultado pretendido** (alimenta os tópicos 1, 11 e 14)
 - Como você chegou à conclusão de que precisa do produto desta contratação? O que aconteceu (ou deixou de acontecer) que evidenciou essa necessidade?
@@ -85,6 +97,8 @@ O DFD quase nunca traz contexto suficiente para um ETP defensável. Antes de esc
 Art. 14 da IN SEGES/ME nº 58/2022: (a) nas hipóteses dos **incisos I, II, VII e VIII do art. 75** e do **§7º do art. 90** da Lei nº 14.133/2021; (b) na hipótese do **inciso III do art. 75**; e (c) nas **prorrogações de contratos de serviços e fornecimentos contínuos**. Em qualquer caso, **o gestor deve justificar expressamente nos autos a posição adotada** — por exemplo, que a elaboração é incompatível com a urgência da contratação.
 
 Antes de elaborar um ETP completo, verifique se o caso se enquadra em alguma dessas hipóteses e pergunte ao usuário se ele pretende usar a faculdade. Se usar, o que entra nos autos é a justificativa da dispensa, não um ETP abreviado.
+
+Essa verificação é resultado direto do **Bloco 0** da entrevista: como as hipóteses dependem do inciso do art. 75 aplicável, só a triagem de enquadramento revela se o ETP é exigível. Na contratação direta, o art. 72, I, também admite o ETP, a análise de riscos e o TR apenas "se for o caso".
 
 ## Estimativa do valor: o ETP não encerra a pesquisa de preços
 

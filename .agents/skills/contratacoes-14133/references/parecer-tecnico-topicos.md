@@ -27,6 +27,8 @@ Regra informada pelo usuário, aplique-a ao decidir se o Parecer Técnico deve s
 
 ## Enquadramento legal — cada inciso do art. 74/75 exige seção e documentação próprias
 
+> **Este arquivo pressupõe o inciso já identificado.** Se você ainda não sabe qual inciso se aplica — ou se o usuário não sabe —, use primeiro `enquadramento-legal-triagem.md`, que chega ao dispositivo por perguntas de fato (valor, número de fornecedores, natureza do contratado, urgência). A divisão é: aquele arquivo descobre *qual* dispositivo; este diz *que prova juntar* e *que seção escrever* para o dispositivo descoberto.
+
 **Nunca escreva "é dispensa" ou "é inexigibilidade" de forma genérica na seção "DA MODALIDADE DA LICITAÇÃO".** A Lei nº 14.133/2021 desdobra a inexigibilidade em 5 incisos (art. 74) e a dispensa em 18 incisos (art. 75), cada um com hipótese fática e prova documental próprias — citar só o artigo, sem o inciso (e a alínea, quando houver), é parecer incompleto. Identifique com o usuário, ou deduza do ETP se ele já tiver essa análise, **o inciso exato** antes de redigir essa seção — nunca presuma o enquadramento nem pule direto para "exclusividade" sem saber qual das cinco hipóteses do art. 74 está em jogo (elas pedem provas completamente diferentes entre si).
 
 Depois de identificado o inciso, use as tabelas abaixo para saber **que documento comprobatório pedir ao usuário** e **que seção extra incluir no parecer** (no padrão das seções "DA CERTIDÃO DE EXCLUSIVIDADE" e "DA QUALIFICAÇÃO ECONÔMICO-FINANCEIRA" já usadas nos pareceres reais do órgão — o nome da seção muda conforme o inciso, ver coluna "Seção extra a incluir").

@@ -2,6 +2,8 @@
 
 Fonte: ETP real do órgão do usuário (aquisição de software especializado), com base na Instrução Normativa SGD/ME nº 94/2022. É substancialmente mais detalhado que o ETP genérico (`references/etp-topicos.md`) — use este arquivo, não o genérico, quando o objeto for de TIC. Dados pessoais e o conteúdo dos anexos do exemplo original (páginas de fornecedor, e-mails com representantes comerciais) foram removidos; mantenha apenas a estrutura de tópicos.
 
+> **Antes de redigir, conduza a triagem de `enquadramento-legal-triagem.md`** (o "Bloco 0" descrito em `etp-topicos.md`). Ela vale igualmente para TIC e define a modalidade e o dispositivo legal — pergunte os fatos, não o enquadramento. Em TIC isso é especialmente sensível: software com fornecedor ou revenda única tende ao art. 74, I, mas exige atestado de exclusividade e **não** admite preferência por marca disfarçada de exclusividade (art. 74, §1º, combinado com o tópico 7 abaixo); renovação de licença/suporte do fabricante durante a garantia pode ser art. 75, IV, "a"; e classificar o objeto de TIC como **bem ou serviço especial** — o que o desloca do pregão para a concorrência (art. 29) — exige **justificativa prévia expressa** do contratante (art. 6º, XIV).
+
 ## Estrutura
 
 0. **Informações Básicas** — número do processo.
