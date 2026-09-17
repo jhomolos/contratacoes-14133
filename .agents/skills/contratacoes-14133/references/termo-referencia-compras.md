@@ -13,6 +13,20 @@ Use este modelo quando o objeto da contratação for **aquisição de bens (comp
 - As tabelas do modelo original (item/especificação/quantidade, estimativas de consumo por órgão participante) aparecem abaixo com a estrutura de colunas preservada, mas sem a formatação de tabela renderizada — reconstrua como tabela ao gerar o TR final.
 - Não invente fundamentação legal, percentuais de multa, prazos ou índices de reajuste que o modelo deixa em aberto — pergunte ao usuário ou extraia do ETP.
 
+## Orientações do IPP da AGU para o TR
+
+Detalhamento completo em `references/ipp-agu-orientacoes.md`, seção "Termo de Referência". Pontos decisivos:
+
+- **Prazo de vigência não é número arbitrário**: deve decorrer da **soma** dos prazos de execução, de substituição ou reparo (quando necessários), recebimento provisório, recebimento definitivo e pagamento.
+- **Garantia do produto ≠ garantia de execução do contrato**: a primeira (CDC ou convencional) relaciona-se à higidez e qualidade do bem fornecido; a segunda (arts. 96 a 102) assegura a regular execução do contrato. São campos distintos, e dispensar uma não afeta a outra.
+- **Especificações vedadas**: as excessivas, irrelevantes ou desnecessárias que limitem a competitividade ou direcionem a contratação; as que não representem a real demanda de desempenho do órgão; e as defasadas tecnológica ou metodologicamente. Toda especificação restritiva exige justificativa de pertinência.
+- **Catálogo Eletrônico de Padronização**: especificar preferencialmente conforme o catálogo disponível no PNCP; não o utilizando, justifique.
+- **Habilitação**: os critérios devem ser justificados nos autos, analisando qualificação econômico-financeira e técnica **à luz dos riscos da contratação** — não por praxe. Fixar **preços máximos aceitáveis globais e unitários**.
+- **Contratação direta**: identificar a forma (dispensa ou inexigibilidade) com os **fundamentos de fato e de direito**, e observar o regime de pesquisa de preços do art. 7º da IN SEGES/ME nº 65/2021.
+- **Mapa de Riscos**: deve ser atualizado e juntado **ao final da elaboração do TR**.
+- **Divulgação**: o TR vai ao **PNCP na mesma data** da divulgação do edital ou do aviso de contratação direta (art. 12 da IN SEGES/ME nº 81/2022); o Compras.gov.br faz isso automaticamente.
+- **Registre a data de extração deste modelo**: ela é exigida na **Declaração de utilização de modelos AGU/MGI** que instrui o processo.
+
 
 ---
 

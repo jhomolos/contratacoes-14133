@@ -13,6 +13,21 @@ Use este modelo quando o objeto da contratação for **aquisição de bens de Te
 - O alinhamento ao PDTIC e à Estratégia de Governo Digital do órgão precisa dos dados reais desses planos — pergunte ao usuário, não invente objetivos estratégicos.
 - Não invente fundamentação legal, percentuais, prazos ou parâmetros que o modelo deixa em aberto — pergunte ao usuário ou extraia do ETP.
 
+## Orientações do IPP da AGU para o TR
+
+Detalhamento completo em `references/ipp-agu-orientacoes.md`, seção "Termo de Referência". Pontos decisivos:
+
+- **Prazo de vigência não é número arbitrário**: deve decorrer da **soma** dos prazos de execução, de substituição ou reparo, recebimento provisório, recebimento definitivo e pagamento. (Atenção: contratações que preveem operação continuada de **sistemas estruturantes de TIC** podem chegar a 15 anos, na forma do art. 114 — alternativa já prevista neste modelo.)
+- **Garantia do produto ≠ garantia de execução do contrato**: a primeira (CDC ou convencional) relaciona-se à higidez e qualidade do bem; a segunda (arts. 96 a 102) assegura a regular execução. São campos distintos.
+- **Especificações vedadas**: excessivas, irrelevantes ou desnecessárias que limitem a competitividade ou direcionem a contratação; que não representem a real demanda de desempenho; ou defasadas tecnológica/metodologicamente. Em TIC, requisitos técnicos supérfluos são a principal causa de direcionamento involuntário — se o mercado apto ficar restrito, **reveja se cada requisito é indispensável**.
+- **Catálogo Eletrônico de Padronização**: verificar no PNCP se o bem é item padronizado; não o utilizando, justifique. Certificar que o objeto **não é bem de luxo** (art. 20 e Decreto nº 10.818/2021).
+- **Propriedade intelectual e transferência de conhecimento**: o modelo já traz a cessão de direitos e a transição contratual como obrigações — confirme que estão coerentes com o que o ETP definiu, em vez de deixá-las no texto padrão sem análise.
+- **Habilitação**: critérios justificados nos autos, à luz dos riscos da contratação. Fixar **preços máximos aceitáveis globais e unitários**.
+- **Contratação direta**: identificar a forma com os **fundamentos de fato e de direito** e observar o art. 7º da IN SEGES/ME nº 65/2021 — inclusive a vedação de inexigibilidade quando a justificativa de preços demonstrar possibilidade de competição (§3º).
+- **Mapa de Riscos**: atualizado e juntado **ao final da elaboração do TR**.
+- **Divulgação**: o TR vai ao **PNCP na mesma data** da divulgação do edital ou do aviso de contratação direta.
+- **Registre a data de extração deste modelo**: exigida na **Declaração de utilização de modelos AGU/MGI**.
+
 
 
 ---

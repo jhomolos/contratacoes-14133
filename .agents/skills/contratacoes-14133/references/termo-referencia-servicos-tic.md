@@ -13,6 +13,23 @@ Use este modelo quando o objeto da contratação for **serviços de Tecnologia d
 - O alinhamento ao PDTIC e à Estratégia de Governo Digital do órgão precisa dos dados reais desses planos — pergunte ao usuário, não invente objetivos estratégicos.
 - Não invente fundamentação legal, percentuais, prazos, índices de reajuste ou critérios de ANS/SLA que o modelo deixa em aberto — pergunte ao usuário ou extraia do ETP.
 
+## Orientações do IPP da AGU para o TR
+
+Detalhamento completo em `references/ipp-agu-orientacoes.md`, seção "Termo de Referência". Pontos decisivos:
+
+- **Prazo de vigência não é número arbitrário**: deve decorrer da **soma** dos prazos de execução, de substituição ou reparo, recebimento provisório, recebimento definitivo e pagamento. Serviços de **operação continuada de sistemas estruturantes de TIC** admitem até 15 anos (art. 114).
+- **Garantia do serviço ≠ garantia de execução do contrato**: a primeira (CDC ou convencional) trata da higidez e qualidade do serviço; a segunda (arts. 96 a 102) assegura a regular execução. São campos distintos.
+- **Medição por resultado**: a unidade de medida deve permitir mensurar resultados e **eliminar a remuneração por horas de serviço ou por postos de trabalho** — hipótese **excepcional** que exige método de cálculo definido. Em serviços de TIC, essa é a principal fonte de glosa: contratos remunerados por alocação de pessoal, e não por entrega.
+- **Indicadores e ANS/SLA**: objetivamente mensuráveis, de coleta fácil, relevantes e adequados; **evitar indicadores complexos ou sobrepostos**; prever fatores fora do controle do prestador; metas realistas; **faixa de tolerância** com menor ou nenhuma margem para atividades críticas; **simples notificação nas primeiras ocorrências** quando o descumprimento for ínfimo e o indicador não crítico. Forma de cálculo da multa **"a mais simples possível"**; sanções **relacionadas às obrigações do modelo de execução**.
+- **IMR**: quando utilizado, deve operar preferencialmente por **ferramentas informatizadas** e ser específico à contratação, "evitando-se um mecanismo de controle apenas de modo textual/protocolar". Se elaborado, é **anexo dos Estudos Preliminares**.
+- **Ordem de Serviço**: identificação do pedido e da contratada, especificação dos serviços, estimativa de horas quando for a única opção viável, local, recursos financeiros, critérios de avaliação e **responsáveis pela solicitação, avaliação e ateste — sem vínculo com a contratada**.
+- **Propriedade intelectual e transferência de conhecimento**: o modelo já traz a cessão de direitos sobre artefatos e a transição contratual com transferência de conhecimento, tecnologia e técnicas — confirme a coerência com o ETP.
+- **Habilitação**: critérios justificados nos autos, à luz dos riscos. Fixar **preços máximos aceitáveis globais e unitários**.
+- **Contratação direta**: fundamentos de fato e de direito, observado o art. 7º da IN SEGES/ME nº 65/2021, inclusive a vedação do §3º (inexigibilidade incompatível com possibilidade de competição).
+- **Mapa de Riscos**: atualizado e juntado **ao final da elaboração do TR**.
+- **Divulgação**: o TR vai ao **PNCP na mesma data** da divulgação do edital ou do aviso de contratação direta.
+- **Registre a data de extração deste modelo**: exigida na **Declaração de utilização de modelos AGU/MGI**.
+
 
 
 ---

@@ -38,6 +38,28 @@ Regra informada pelo usuário, aplique-a ao decidir se o Parecer Técnico deve s
 - Inclui uma seção adicional **"DA CERTIDÃO DE EXCLUSIVIDADE"** (ou equivalente) — comprova, com documento oficial (certidão de associação de classe, página oficial do fornecedor, registro em sistema público), que o fornecedor é o único capaz de atender ao objeto.
 - Pode incluir uma seção **"DA QUALIFICAÇÃO ECONÔMICO-FINANCEIRA"** — normalmente para explicar que essa exigência é dispensada quando o fornecedor é outro ente da Administração Pública (cuja saúde financeira depende do mesmo ordenamento jurídico), ou para tratar do tema quando o fornecedor é privado.
 
+## Justificativa e pesquisa de preços em contratação direta — regime do art. 7º da IN SEGES/ME nº 65/2021
+
+As seções "DA JUSTIFICATIVA DOS PREÇOS" e "DA PESQUISA DE PREÇOS" do parecer são governadas por regra própria, detalhada em `references/ipp-agu-orientacoes.md` (seção "Pesquisa de preços"). O essencial:
+
+- **Regra geral**: nas contratações diretas por inexigibilidade ou dispensa, **aplicam-se os mesmos parâmetros do art. 5º** (sistemas oficiais, contratações similares da Administração, mídia especializada/tabelas de referência, pesquisa direta com no mínimo 3 fornecedores, notas fiscais eletrônicas). Não é verdade que contratação direta dispensa pesquisa de preços.
+- **Quando não for possível** estimar pelas formas ordinárias (§1º): a justificativa de preços será dada com base em **valores de contratações de objetos idênticos comercializados pela futura contratada**, comprovados por **notas fiscais emitidas para outros contratantes, públicos ou privados, no período de até 1 ano anterior** à data da contratação, **ou por outro meio idôneo**. É a reprodução do art. 23, §4º, da Lei nº 14.133/2021.
+- **Se a futura contratada nunca comercializou o objeto** (§2º): admite-se, excepcionalmente, justificar o preço com **objetos semelhantes de mesma natureza**, apresentando especificações técnicas que demonstrem a similaridade.
+- **REGRA DECISIVA (§3º)**: *"Fica vedada a contratação direta por inexigibilidade caso a justificativa de preços demonstre a possibilidade de competição."* Se a pesquisa de preços revelar fornecedores concorrentes aptos a atender ao objeto, **a inexigibilidade não se sustenta** — o processo deve migrar para licitação (ou, se for o caso, para dispensa com o fundamento adequado). Ao redigir um parecer de inexigibilidade, verifique se a pesquisa de preços realizada não contradiz a tese de inviabilidade de competição; essa contradição interna entre a fundamentação e a pesquisa é um dos achados mais frequentes do controle.
+- **Dispensa pelos incisos I e II do art. 75** (§4º e §5º): a estimativa pode ser feita **concomitantemente à seleção da proposta economicamente mais vantajosa**, por meio de solicitação formal de cotações.
+
+### Conclusão do parecer quanto ao preço
+
+Nas contratações diretas, a manifestação conclusiva não é sobre "compatibilidade com o mercado" — é sobre a **vantajosidade da proposta da contratada** para a Administração. O modelo de Nota Técnica do IPP traz a fórmula: *"certifica-se que o preço estimado para a presente contratação é compatível com os praticados no mercado (ou é vantajoso para a Administração, se for caso de dispensa ou inexigibilidade)"*. Use a segunda redação.
+
+### Relação com o Relatório/Nota Técnica de pesquisa de preços
+
+O parecer técnico **não substitui** o Relatório da Pesquisa de Preços (art. 3º da IN 65/2021), que é artefato autônomo da instrução. Se o processo ainda não tiver esse relatório, avise o usuário: a seção "DA PESQUISA DE PREÇOS" do parecer deve **remeter** a ele, não fazer as suas vezes. A estrutura do relatório está em `references/ipp-agu-orientacoes.md`, seção "Relatório da Pesquisa de Preços / Nota Técnica" — inclusive a tabela de fornecedores consultados com indicação de quem **não respondeu** e a justificativa da escolha de cada um.
+
+## Autorização da autoridade competente
+
+Além do parecer técnico, a contratação depende de **ato de autorização** da autoridade competente (IPP, seção 14). Em contratações de **atividades de custeio** no Executivo Federal, a alçada é definida pelo **Decreto nº 10.193/2019**: contratos de valor **igual ou inferior a R$ 1.000.000,00** podem ser autorizados por coordenadores ou chefes de unidades administrativas (**vedada subdelegação**); **inferiores a R$ 10.000.000,00**, por subsecretários de planejamento, orçamento e administração ou autoridade equivalente. O enquadramento como atividade de custeio considera **a natureza da atividade contratada, não a classificação orçamentária** (Portaria ME nº 7.828/2022, art. 2º). A autoridade deve certificar-se dessa natureza **sob pena de praticar ato com vício de competência**. A autorização pode ocorrer em qualquer fase, até antes da assinatura do contrato.
+
 ## Como preencher
 
 - Nunca invente o enquadramento legal (inciso do art. 74 ou 75) — pergunte ao usuário qual é a hipótese aplicável ao caso concreto, ou deduza a partir do ETP se ele já tiver essa análise.

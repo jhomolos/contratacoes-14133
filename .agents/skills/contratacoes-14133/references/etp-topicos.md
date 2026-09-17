@@ -26,6 +26,8 @@ Base legal: art. 18, §1º, da Lei 14.133/2021. A numeração e a redação abai
 
 O DFD quase nunca traz contexto suficiente para um ETP defensável. Antes de escrever qualquer tópico, conduza esta entrevista com o usuário. Não presuma respostas: o IPP da AGU (ver `references/ipp-agu-orientacoes.md`) é explícito em que a necessidade "pode inclusive ser distinta a depender da finalidade do órgão, ainda que o objeto indicado pelo setor requisitante seja o mesmo" — ou seja, o mesmo objeto justifica-se de formas diferentes em contextos diferentes, e só o usuário conhece o dele.
 
+**Os blocos abaixo não são um checklist fixo a percorrer identicamente em toda contratação.** Vários itens só fazem sentido para determinada natureza de objeto — estão marcados como condicionais entre parênteses. Antes de entrevistar, identifique com o usuário se o objeto é bem ou serviço e, sendo serviço, de que natureza (curso/treinamento/capacitação, mão de obra dedicada, TI, obra, locação, etc.), e pule as perguntas cuja condição não se aplica. Perguntar sobre material didático ou certificado de conclusão numa aquisição de equipamentos, por exemplo, é sinal de entrevista mal calibrada — o objetivo é uma entrevista enxuta e pertinente, não exaustiva por hábito.
+
 **Bloco 1 — Necessidade e resultado pretendido** (alimenta os tópicos 1, 11 e 14)
 - Como você chegou à conclusão de que precisa do produto desta contratação? O que aconteceu (ou deixou de acontecer) que evidenciou essa necessidade?
 - Qual problema, exatamente, esta contratação resolve?
@@ -40,7 +42,9 @@ O DFD quase nunca traz contexto suficiente para um ETP defensável. Antes de esc
 - Há interdependência com outras contratações que permita economia de escala?
 
 **Bloco 3 — Composição do objeto e requisitos** (alimenta os tópicos 3 e 5)
-- Há fornecimento de insumos, material didático (ainda que em formato digital), uniformes, equipamentos, licenças ou qualquer item acessório embutido no objeto? Isso precisa estar explícito.
+- Há fornecimento de insumos, equipamentos, licenças ou qualquer item acessório embutido no objeto? Isso precisa estar explícito.
+- (Se o objeto for curso, treinamento, capacitação ou especialização) Haverá fornecimento de material didático, ainda que em formato digital?
+- (Se o serviço envolver mão de obra alocada nas dependências do contratante) Haverá fornecimento de uniformes?
 - Há exigência de garantia ou assistência técnica?
 - Há questões de frete, entrega ou deslocamento?
 - Cabe subcontratação?
@@ -48,7 +52,8 @@ O DFD quase nunca traz contexto suficiente para um ETP defensável. Antes de esc
 
 **Bloco 4 — Medição do resultado** (alimenta o tópico 11 e o modelo de gestão do TR)
 - Como o produto da contratação será medido/aferido? Qual a unidade de medida que permite verificar o resultado?
-- Há um modelo de relatório, certificado, termo de aceite ou instrumento equivalente que comprove a entrega?
+- Há um modelo de relatório, termo de aceite ou instrumento equivalente que comprove a entrega?
+- (Se o objeto for curso, treinamento, capacitação ou especialização) Haverá emissão de certificado de conclusão? Para quem (todos os inscritos ou só aprovados?), e com que requisito de frequência ou aproveitamento?
 - Será elaborado Instrumento de Medição de Resultados (IMR)? Se sim, ele deve constar como **anexo do ETP** (IN SEGES/MP nº 05/2017, Anexos V-B e VIII-A).
 
 **Bloco 5 — Garantia** (alimenta o tópico 3)
@@ -74,3 +79,29 @@ O DFD quase nunca traz contexto suficiente para um ETP defensável. Antes de esc
 - Reaproveite diretamente o que já foi levantado no DFD para os tópicos 1 (necessidade) e 6-7 (quantidades e valor), em vez de pedir de novo ou reescrever do zero.
 - O tópico 14 (Declaração de Viabilidade) só deve ser escrito por último.
 - Os tópicos 6 e 7 (Estimativa das Quantidades e Estimativa do Valor) da lei aparecem como uma dupla no modelo do órgão — mantenha essa proximidade na redação, já que um normalmente referencia o outro.
+
+## Quando o ETP pode ser dispensado
+
+Art. 14 da IN SEGES/ME nº 58/2022: (a) nas hipóteses dos **incisos I, II, VII e VIII do art. 75** e do **§7º do art. 90** da Lei nº 14.133/2021; (b) na hipótese do **inciso III do art. 75**; e (c) nas **prorrogações de contratos de serviços e fornecimentos contínuos**. Em qualquer caso, **o gestor deve justificar expressamente nos autos a posição adotada** — por exemplo, que a elaboração é incompatível com a urgência da contratação.
+
+Antes de elaborar um ETP completo, verifique se o caso se enquadra em alguma dessas hipóteses e pergunte ao usuário se ele pretende usar a faculdade. Se usar, o que entra nos autos é a justificativa da dispensa, não um ETP abreviado.
+
+## Estimativa do valor: o ETP não encerra a pesquisa de preços
+
+O tópico 7 do ETP traz a estimativa, mas a **pesquisa de preços é artefato próprio**, regida pelo art. 23 da Lei nº 14.133/2021 e pela **IN SEGES/ME nº 65/2021**, e se materializa em dois documentos que precisam estar nos autos:
+
+1. a **planilha com os preços pesquisados** (com todos os preços coletados, indicando quais compuseram a cesta e quais foram desconsiderados e por quê); e
+2. o **Relatório da Pesquisa de Preços / Nota Técnica**, com a análise crítica (conteúdo mínimo no art. 3º da IN 65/2021).
+
+Parâmetros, metodologia (média/mediana/menor), cuidados na pesquisa direta com fornecedores e o regime especial das contratações diretas estão detalhados em `references/ipp-agu-orientacoes.md`, seções "Pesquisa de preços" e "Relatório da Pesquisa de Preços / Nota Técnica". Dois pontos que o ETP costuma deixar passar:
+
+- é obrigatório registrar **a listagem dos fornecedores consultados, a justificativa da escolha de cada um e quais deixaram de responder**;
+- as memórias de cálculo e documentos de suporte **podem constar de anexo classificado**, se a Administração optar por preservar o sigilo do orçamento até a conclusão da licitação (art. 24).
+
+## Ligação com o Mapa de Riscos
+
+Se o tópico 12 (Providências a serem Adotadas) apontar necessidade de adequação do ambiente — infraestrutura, sistemas, capacitação de fiscais —, o IPP determina que essa providência seja **incluída no Mapa de Riscos como fator de risco** ao sucesso da contratação, caso não seja implementada a tempo. Além disso, o Mapa de Riscos deve ser **atualizado e juntado ao final da elaboração do ETP** (e novamente ao final do TR).
+
+## Instrumento de Medição de Resultados (IMR)
+
+Em contratações de serviços, quando houver IMR ou instrumento substituto, ele deve constar como **anexo dos Estudos Preliminares** (IN SEGES/MP nº 05/2017, Anexos V-B e VIII-A) — não apenas ser mencionado no TR. O IPP observa que os resultados pretendidos devem ser **constantemente revisitados até a elaboração final do TR**, porque é a clareza deles que permite estipular níveis de qualidade e as respectivas adequações de pagamento.

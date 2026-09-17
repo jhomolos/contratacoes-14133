@@ -13,6 +13,23 @@ Use este modelo quando o objeto da contratação for **serviço** (contínuo ou 
 - Substitua todos os campos entre colchetes com as informações da contratação em questão, obtidas do ETP e do DFD já elaborados ou perguntadas diretamente ao usuário.
 - Não invente fundamentação legal, percentuais de multa, prazos, índices de reajuste ou parâmetros do IMR (Instrumento de Medição de Resultado) que o modelo deixa em aberto — pergunte ao usuário ou extraia do ETP.
 
+## Orientações do IPP da AGU para o TR
+
+Detalhamento completo em `references/ipp-agu-orientacoes.md`, seção "Termo de Referência". Pontos decisivos:
+
+- **Prazo de vigência não é número arbitrário**: deve decorrer da **soma** dos prazos de execução, de substituição ou reparo (quando necessários), recebimento provisório, recebimento definitivo e pagamento.
+- **Garantia do serviço ≠ garantia de execução do contrato**: a primeira (CDC ou convencional) relaciona-se à higidez e qualidade do serviço prestado; a segunda (arts. 96 a 102) assegura a regular execução do contrato. São campos distintos, e dispensar uma não afeta a outra.
+- **Medição por resultado**: a unidade de medida deve permitir mensurar resultados e **eliminar a possibilidade de remunerar por quantidade de horas de serviço ou por postos de trabalho** — que é hipótese **excepcional** e exige método de cálculo definido. Adotada essa unidade, admite-se flexibilizar a execução ao longo do expediente, **vedadas horas extras ou adicionais não previstos originariamente**.
+- **Indicadores de desempenho**: objetivamente mensuráveis, compreensíveis, de coleta fácil, relevantes e adequados à natureza do serviço; **evitar indicadores complexos ou sobrepostos**; prever fatores fora do controle do prestador; metas realistas; **faixa de tolerância** com menor ou nenhuma margem para atividades críticas; possibilidade de **simples notificação nas primeiras ocorrências** quando o descumprimento for ínfimo e o indicador não for crítico. A forma de cálculo da multa deve ser **"a mais simples possível"**, e as sanções devem estar **relacionadas às obrigações do modelo de execução**.
+- **IMR**: quando utilizado, deve operar preferencialmente por **ferramentas informatizadas** e ser específico à contratação, "evitando-se um mecanismo de controle apenas de modo textual/protocolar". Se elaborado, é **anexo dos Estudos Preliminares** (IN SEGES/MP nº 05/2017, Anexos V-B e VIII-A).
+- **Ordem de Serviço**: o modelo deve conter, no mínimo, identificação do pedido e da contratada, especificação dos serviços, estimativa prévia de horas (quando for a única opção viável), local, recursos financeiros, critérios de avaliação e **identificação dos responsáveis pela solicitação, avaliação e ateste — que não podem ter vínculo com a contratada**.
+- **Especificações vedadas**: as excessivas, irrelevantes ou desnecessárias que limitem a competitividade ou favoreçam prestador específico; as que não representem a real demanda de desempenho; e as defasadas tecnológica ou metodologicamente.
+- **Habilitação**: critérios justificados nos autos, analisando qualificação econômico-financeira e técnica **à luz dos riscos da contratação**. Fixar **preços máximos aceitáveis globais e unitários**.
+- **Contratação direta**: identificar a forma (dispensa ou inexigibilidade) com os **fundamentos de fato e de direito**, observando o regime de pesquisa de preços do art. 7º da IN SEGES/ME nº 65/2021.
+- **Mapa de Riscos**: deve ser atualizado e juntado **ao final da elaboração do TR**.
+- **Divulgação**: o TR vai ao **PNCP na mesma data** da divulgação do edital ou do aviso de contratação direta (art. 12 da IN SEGES/ME nº 81/2022).
+- **Registre a data de extração deste modelo**: exigida na **Declaração de utilização de modelos AGU/MGI**.
+
 
 ---
 

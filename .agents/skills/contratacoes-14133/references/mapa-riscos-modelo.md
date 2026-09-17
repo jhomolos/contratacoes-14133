@@ -1,6 +1,25 @@
 # Modelo de Mapa de Gerenciamento de Riscos
 
-Fonte: modelo do órgão do usuário, baseado na metodologia da IN SGD/ME nº 1, de 2019, e ISO/IEC 31000:2009.
+Fonte: modelo do órgão do usuário, baseado na metodologia da IN SGD/ME nº 1, de 2019, e ISO/IEC 31000:2009. As orientações normativas de elaboração vêm do IPP da AGU (seção 5) — ver `references/ipp-agu-orientacoes.md`.
+
+## Antes de elaborar: quatro regras do IPP
+
+1. **O Mapa de Riscos pode ser dispensado nas contratações diretas** (art. 72, inciso I, da Lei nº 14.133/2021), **exceto quanto à parte relacionada à fase de gestão do contrato**. A dispensa é **condicionada à juntada aos autos de justificativa** — por exemplo, demonstrando que a elaboração é incompatível com a urgência da contratação. Antes de elaborar um Mapa completo em dispensa ou inexigibilidade, pergunte ao usuário se ele quer usar essa faculdade; se usar, ainda assim produza a parte de gestão contratual.
+2. **Evite indicações genéricas e meramente protocolares.** O IPP é expresso: a identificação dos riscos "deve guardar pertinência com as especificidades da pretensão". Um mapa com riscos genéricos (que serviriam para qualquer contratação) é o defeito mais comum e o mais facilmente detectado em auditoria.
+3. **O Mapa de Riscos não é documento único — é reanalisado ao longo do planejamento**, "haja vista o constante aumento de elementos a melhor precisar as necessidades e vicissitudes". Deve ser atualizado e juntado: ao final da elaboração do **ETP**; ao final da elaboração do **TR**; após a fase de **Seleção do Fornecedor**; e após **eventos relevantes**.
+4. **Mapa de Riscos ≠ matriz de risco.** A matriz de risco é cláusula da **minuta de contrato**, caracterizadora do equilíbrio econômico-financeiro inicial, que aloca previamente a responsabilidade das partes pelo ônus financeiro de eventos supervenientes. Elaborar o Mapa de Riscos **não supre** a necessidade de discutir a matriz de riscos no instrumento contratual — são documentos com funções distintas.
+
+## As cinco etapas da gestão de riscos (IPP)
+
+Risco é **evento futuro, identificado e passível de atribuir probabilidade de ocorrência e impacto**. A gestão compreende: (a) identificação; (b) avaliação; (c) tratamento; (d) implementação; (e) monitoramento.
+
+Cabe à equipe: identificar os riscos que possam comprometer a efetividade da contratação ou impedir o alcance dos resultados; avaliar e **mensurar probabilidade e impacto**; conferir tratamento por **ações preventivas** (reduzir a chance de ocorrência) e **ações de contingência** (para o caso de o evento se concretizar); e definir **responsáveis** pelas ações — "sendo relevante a indicação do setor que, de fato, tenha atribuição para tratar de forma eficiente os eventos mapeados", e não um responsável nominal sem competência real.
+
+O artefato é confeccionado no **módulo de Gestão de Riscos Digital** do Portal de Compras.
+
+## Entradas obrigatórias vindas do ETP
+
+Se o ETP apontou, no tópico "Providências a serem adotadas", a necessidade de adequação do ambiente da organização (infraestrutura, sistemas, capacitação de fiscais), essa providência **deve ser incluída no Mapa de Riscos como fator de risco** ao sucesso da contratação, caso não seja implementada a tempo (orientação expressa do IPP).
 
 ## Estrutura
 
