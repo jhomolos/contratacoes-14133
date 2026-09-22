@@ -1,15 +1,64 @@
-# Tópicos do Parecer Técnico — Contratação Direta
+# Tópicos do Parecer Técnico
 
 Fonte: dois pareceres técnicos reais do órgão do usuário (um de dispensa, um de inexigibilidade), usados para extrair a estrutura e os tópicos obrigatórios comuns — os dados específicos de caso (fornecedor, valores, nomes de signatários) foram removidos/generalizados. A tabela de enquadramento por inciso (seção "Enquadramento legal") foi construída a partir do texto literal dos arts. 74 e 75 da Lei nº 14.133/2021 (conferido em planalto.gov.br), não dos dois pareceres-exemplo, que cobriam apenas um inciso cada. As seções sobre verificações prévias, instrumento contratual, divulgação e relação com o parecer jurídico vieram de análise dos **arts. 14, 20, 23, 53, 63, 68, 72, 91, 92, 94 e 95** — dispositivos que incidem sobre a contratação direta sem estar nos arts. 74 e 75, e que os pareceres-exemplo não cobriam.
 
 ## Quando o Parecer Técnico é exigido
 
-Regra informada pelo usuário, aplique-a ao decidir se o Parecer Técnico deve ser produzido:
+O parecer técnico **não é exclusivo da contratação direta**, mas também não é obrigatório em toda e qualquer licitação. O documento que a lei realmente torna obrigatório na fase preparatória de **toda** licitação e de **toda** contratação direta é o **parecer jurídico** — controle prévio de legalidade, art. 53, caput e §4º —, elaborado pelo órgão de assessoramento jurídico, não pela área técnica. Esse parecer está **fora do escopo desta skill**; não o confunda com o parecer técnico nem se ofereça para redigi-lo.
 
-- **Dispensa de licitação**: exigido.
-- **Inexigibilidade de licitação**: exigido.
-- **Pregão**: não exigido.
-- **Concorrência**: incerto — o usuário não soube confirmar. Pergunte ao usuário ou trate como pendente de confirmação em vez de assumir que é dispensado ou exigido.
+A exigência (ou a utilidade) de um parecer técnico distinto depende da via e, na licitação, do critério de julgamento e das circunstâncias do certame:
+
+| Situação | Parecer técnico | Base legal | Observação |
+|---|---|---|---|
+| **Dispensa de licitação** | Exigido (se for o caso) | Art. 72, III — "parecer jurídico e **pareceres técnicos, se for o caso**" | É o único caso em que a lei usa literalmente o termo "parecer técnico". Estrutura em `## Enquadramento legal` abaixo |
+| **Inexigibilidade de licitação** | Exigido (se for o caso) | Art. 72, III | Idem — estrutura em `## Enquadramento legal` abaixo |
+| **Concorrência ou pregão por técnica e preço / melhor técnica** | Banca técnica obrigatória, com registro que funciona como parecer técnico | Arts. 36 a 38 | Não é facultativo: a lei exige banca de no mínimo 3 membros atribuindo notas. Ver `## Parecer técnico em licitação` abaixo |
+| **Concorrência para bens/serviços especiais de alta complexidade** | Justificativa técnica da classificação como especial | Art. 6º, XIV | A lei exige "justificativa prévia do contratante"; normalmente é a área técnica quem a redige, mas a lei não usa o rótulo "parecer técnico" para isso |
+| **Pregão ou concorrência com amostra/prova de conceito exigida em edital** | Situacional — parecer de aprovação/reprovação da amostra | Art. 41, II; art. 42, §§2º e 3º | Só existe se o edital previr a exigência; recai sobre o licitante mais bem classificado |
+| **Recurso administrativo de natureza técnica** (art. 165) | Situacional — prática recomendada, não comando literal da lei | Art. 165 | A lei manda o recurso à autoridade que proferiu o ato; não exige expressamente um "parecer técnico", mas é prática corrente pedir subsídio à área técnica quando o recurso questiona uma especificação ou desclassificação técnica |
+| **Pregão comum (sem técnica e preço, sem amostra)** | Não exigido | — | Não ofereça parecer técnico neste caso |
+
+Ao identificar a modalidade e o critério de julgamento (ver `enquadramento-legal-triagem.md`, Etapa 3), verifique qual das linhas acima se aplica **antes** de assumir que "pregão nunca tem parecer" ou que "concorrência sempre tem" — nenhuma das duas afirmações é correta isoladamente.
+
+## Parecer técnico em licitação (pregão/concorrência)
+
+> **Escopo distinto do restante deste arquivo.** Tudo que vem depois desta seção — "Entrevista antes de redigir", "Enquadramento legal (art. 74/75)", as seções sobre vedações, idoneidade e instrumento contratual — é específico de **contratação direta** (dispensa/inexigibilidade) e não se aplica aqui. Nas quatro hipóteses abaixo não há inciso do art. 74/75 a identificar, porque o objeto está sendo disputado, não contratado diretamente.
+
+### 1. Julgamento por melhor técnica ou técnica e preço (arts. 36 a 38)
+
+Não é facultativo: escolhido esse critério de julgamento, a lei **exige** avaliação por banca técnica. Confirme com o usuário:
+
+- **O critério foi escolhido porque o ETP demonstrou que a qualidade técnica das propostas é relevante** (art. 36, §1º) para: serviços técnicos especializados de natureza predominantemente intelectual (inciso I — aqui o **emprego é preferencial**, não apenas possível); serviços majoritariamente dependentes de tecnologia sofisticada e de domínio restrito; bens e serviços especiais de TIC; obras e serviços especiais de engenharia; ou objetos com soluções técnicas alternativas de livre escolha do licitante, com repercussão mensurável sobre qualidade/produtividade/rendimento/durabilidade.
+- **A banca tem no mínimo 3 membros** (art. 37, §1º), podendo incluir profissionais contratados por conhecimento técnico ou renome (não só servidores efetivos), desde que supervisionados por profissional designado nos termos do art. 7º.
+- **O que a banca produz**: notas a quesitos qualitativos definidos em edital (demonstração de conhecimento do objeto, metodologia, programa de trabalho, qualificação das equipes, produtos a entregar — art. 37, II) e notas por desempenho pretérito em contratações anteriores (art. 37, III, combinado com art. 88, §§3º-4º, e o registro cadastral do PNCP). **Esse registro de notas com a motivação é o que funciona como parecer técnico neste contexto** — a lei não usa o rótulo, mas a exigência de fundamentação é a mesma.
+- Peça ao usuário a **composição da banca**, os **quesitos e pesos definidos no edital**, e os **atestados/documentos comprobatórios** apresentados pelos licitantes (capacitação e experiência, art. 37, I). Não invente notas nem quesitos.
+- No julgamento por técnica e preço, a proposta técnica vale **no máximo 70%** da ponderação (art. 36, §2º).
+- Atenção à hipótese do art. 37, §2º (redação promulgada após veto): para os serviços técnicos especializados das alíneas "a", "d" e "h" do art. 6º, XVIII, com valor estimado **acima de R$ 300.000,00**, ressalvada a inexigibilidade, o julgamento **será** por melhor técnica ou técnica e preço — não é discricionário.
+
+### 2. Bens e serviços especiais de alta complexidade (art. 6º, XIV)
+
+Classificar o objeto como especial (em vez de comum) **exige justificativa prévia do contratante** — é o que a triagem de enquadramento já cobra na Etapa 1, pergunta 4 (`enquadramento-legal-triagem.md`). A lei não chama essa justificativa de "parecer técnico", mas na prática costuma ser a área técnica quem a redige, porque exige avaliar heterogeneidade ou complexidade que a área administrativa não tem elementos para julgar sozinha. Se o usuário pedir um documento formal para essa justificativa, trate-o como uma seção de fundamentação técnica dentro do ETP ou do TR — não crie um "Parecer Técnico" autônomo só para isso, a menos que o critério de julgamento também seja técnica e preço (hipótese 1 acima).
+
+### 3. Amostra ou prova de conceito (art. 41, II; art. 42, §§2º e 3º)
+
+Situacional: só existe se o **edital previr** a exigência e a **necessidade estiver justificada** (art. 41, II). Quando prevista:
+
+- A exigência de amostra/prova de conceito, na fase de julgamento das propostas ou lances, **restringe-se ao licitante provisoriamente vencedor** (art. 41, parágrafo único) — não se pede amostra de todos os licitantes.
+- A Administração pode oferecer protótipo do objeto pretendido e examinar as amostras "para atender a diligência ou, após o julgamento, como condição para firmar contrato" (art. 42, §2º).
+- **No interesse da Administração, as amostras podem ser examinadas por instituição com reputação ético-profissional na especialidade do objeto, previamente indicada no edital** (art. 42, §3º) — é aqui que nasce, na prática, o parecer técnico de aprovação ou reprovação da amostra.
+- Ao redigir esse parecer: identifique os **critérios objetivos do edital** que a amostra deve atender, registre o exame **item a item**, e conclua motivadamente pela aprovação ou reprovação — decisão que pode ser impugnada pelo licitante (ver hipótese 4).
+
+### 4. Subsídio a recurso administrativo de natureza técnica (art. 165)
+
+A lei **não exige literalmente** um parecer técnico aqui — o art. 165 manda o recurso à autoridade que proferiu o ato (ou, se ela não reconsiderar, à autoridade superior, em até 10 dias úteis). Mas quando o recurso questiona uma **especificação técnica do edital** ou a **desclassificação/inabilitação por motivo técnico**, é prática recomendada — não comando legal — que o pregoeiro, o agente de contratação ou a autoridade competente solicite manifestação da área técnica antes de decidir. Ao usuário que pedir esse parecer:
+
+- Não afirme que a lei o exige; explique que ele **subsidia** a decisão da autoridade, que continua sendo dela.
+- Estruture como resposta direta às razões recursais: cada ponto técnico levantado pelo recorrente, seguido da análise técnica e da conclusão.
+- Lembre o prazo do art. 165, §2º: a autoridade decide em até 10 dias úteis contados do recebimento dos autos — o parecer técnico precisa ser produzido a tempo de caber nesse prazo.
+
+## A partir daqui: parecer técnico de contratação direta
+
+Tudo o que segue — a entrevista, a estrutura comum, as tabelas de enquadramento por inciso, as verificações do fornecedor — é específico de **dispensa e inexigibilidade** (art. 72, III). Se a situação do usuário é uma das quatro hipóteses de licitação descritas acima, pare aqui e volte à seção correspondente; não aplique a entrevista nem as tabelas de enquadramento do art. 74/75 a um parecer de banca técnica, de amostra ou de recurso.
 
 ## Entrevista antes de redigir (portão obrigatório)
 

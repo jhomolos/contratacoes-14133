@@ -98,13 +98,20 @@ Reaproveite diretamente do ETP: descrição da solução, requisitos, quantidade
 
 ### Passo 4: Parecer Técnico (quando aplicável)
 
-Antes de redigir, determine se o Parecer Técnico é exigido para a modalidade em questão:
+O parecer técnico não é privativo da contratação direta, mas também não é automático em toda licitação — não decida por "pregão nunca tem" nem "concorrência sempre tem". Leia a tabela em `references/parecer-tecnico-topicos.md` (seção "Quando o Parecer Técnico é exigido") e verifique qual hipótese se aplica:
 
-- **Dispensa ou inexigibilidade de licitação**: exigido.
-- **Pregão**: não exigido — não ofereça para elaborar um Parecer Técnico neste caso.
-- **Concorrência**: incerto (o próprio usuário não soube confirmar) — pergunte a ele antes de assumir que é ou não exigido; não decida sozinho.
+- **Dispensa ou inexigibilidade de licitação**: exigido, se for o caso (art. 72, III) — segue a estrutura de "Enquadramento legal" do arquivo, com o inciso do art. 74/75.
+- **Concorrência ou pregão com critério de julgamento por técnica e preço ou melhor técnica**: banca técnica **obrigatória** por lei (arts. 36 a 38) — não é facultativo. Pergunte o critério de julgamento definido no ETP/edital antes de assumir que não há parecer.
+- **Concorrência para bens/serviços especiais de alta complexidade**: exige justificativa técnica da classificação (art. 6º, XIV) — geralmente dentro do ETP/TR, não como parecer autônomo, salvo se também houver técnica e preço.
+- **Pregão ou concorrência com amostra/prova de conceito prevista em edital**: situacional — parecer de aprovação/reprovação da amostra do licitante mais bem classificado (art. 41, II; art. 42, §§2º-3º).
+- **Recurso administrativo de natureza técnica**: situacional e não expressamente exigido pela lei — prática recomendada para subsidiar a autoridade decisora (art. 165).
+- **Pregão comum, sem técnica e preço nem amostra**: não exigido — não ofereça parecer técnico neste caso.
 
-Se exigido, leia `references/parecer-tecnico-topicos.md` e conduza **toda** a seção "Entrevista antes de redigir (portão obrigatório)" antes de escrever qualquer texto do parecer — ela reúne, num único momento, tudo que falta pedir ao usuário e decide quais seções condicionais entram no documento (só entram as pertinentes ao inciso e ao caso concreto; o parecer não segue a regra do ETP de justificar tópicos ausentes — ver "Regra da assertividade" no mesmo arquivo). O arquivo traz a estrutura comum e, na seção "Enquadramento legal", uma tabela com cada um dos 5 incisos do art. 74 (inexigibilidade) e dos 18 incisos do art. 75 (dispensa) — cada inciso pede uma prova documental e uma seção extra do parecer diferentes (ex.: notória especialização exige currículo/portfólio e seção própria; exclusividade de fornecedor exige atestado de exclusividade; imóvel exige laudo de singularidade).
+O **parecer jurídico** (controle prévio de legalidade, art. 53) é o documento obrigatório na fase preparatória de toda licitação e contratação direta — mas é elaborado pelo órgão de assessoramento jurídico, está fora do escopo desta skill, e não deve ser confundido com o parecer técnico.
+
+Identificada a hipótese, leia `references/parecer-tecnico-topicos.md`. Se for uma das quatro hipóteses de licitação (técnica e preço/melhor técnica, bens/serviços especiais, amostra/prova de conceito, recurso técnico), use a seção "Parecer técnico em licitação (pregão/concorrência)" — ela tem estrutura própria, sem inciso de art. 74/75 a identificar, e o restante deste Passo 4 não se aplica a ela.
+
+Se for dispensa ou inexigibilidade, conduza **toda** a seção "Entrevista antes de redigir (portão obrigatório)" antes de escrever qualquer texto do parecer — ela reúne, num único momento, tudo que falta pedir ao usuário e decide quais seções condicionais entram no documento (só entram as pertinentes ao inciso e ao caso concreto; o parecer não segue a regra do ETP de justificar tópicos ausentes — ver "Regra da assertividade" no mesmo arquivo). O arquivo traz a estrutura comum e, na seção "Enquadramento legal", uma tabela com cada um dos 5 incisos do art. 74 (inexigibilidade) e dos 18 incisos do art. 75 (dispensa) — cada inciso pede uma prova documental e uma seção extra do parecer diferentes (ex.: notória especialização exige currículo/portfólio e seção própria; exclusividade de fornecedor exige atestado de exclusividade; imóvel exige laudo de singularidade).
 
 O inciso exato já deve estar definido pela triagem do Passo 1 e declarado no tópico 5 do ETP — reaproveite-o. Se o usuário chegou direto ao Parecer Técnico, ou se o ETP cita só o artigo sem o inciso, **conduza antes a triagem de `references/enquadramento-legal-triagem.md`**: não pergunte "qual o inciso?" a quem pode não saber responder, e nunca invente o enquadramento nem generalize "dispensa"/"inexigibilidade" sem o inciso. Lembre também o art. 72, que lista os oito documentos de instrução do processo de contratação direta, e o art. 73, que responsabiliza solidariamente contratado e agente público pela contratação direta indevida com dolo, fraude ou erro grosseiro.
 
