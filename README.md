@@ -1,4 +1,4 @@
-# skill-14133
+# contratacoes-14133
 
 Skill para [Claude Code](https://claude.com/claude-code) que elabora e revisa a documentação técnica de contratações públicas federais sob a **Lei nº 14.133/2021** (Nova Lei de Licitações e Contratos), a partir do Documento de Formalização de Demanda (DFD) do usuário.
 
@@ -63,7 +63,7 @@ Arquivos com dados pessoais reais (CPF, nomes, processos em andamento) ficam for
 **Via plugin marketplace (recomendado)**, dentro do Claude Code:
 
 ```
-/plugin marketplace add jhomolos/skill-14133
+/plugin marketplace add jhomolos/contratacoes-14133
 /plugin install contratacoes-14133@contratacoes-14133-marketplace
 ```
 
