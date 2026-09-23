@@ -1,0 +1,14 @@
+{
+  "name": "contratacoes-14133-marketplace",
+  "owner": {
+    "name": "jhomolos",
+    "url": "https://github.com/jhomolos"
+  },
+  "plugins": [
+    {
+      "name": "contratacoes-14133",
+      "source": "./",
+      "description": "Elabora e revisa a documentação técnica de contratações públicas federais sob a Lei 14.133/2021 (DFD, ETP, Mapa de Riscos, Termo de Referência, Parecer Técnico)."
+    }
+  ]
+}
