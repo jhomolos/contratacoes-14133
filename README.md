@@ -29,7 +29,11 @@ A skill também **revisa documentação já pronta** — própria, de terceiros,
 ## Estrutura do repositório
 
 ```
-.agents/skills/contratacoes-14133/
+.claude-plugin/
+  plugin.json                           # manifesto do plugin (nome, versão, autor, keywords)
+  marketplace.json                      # catálogo que aponta para este mesmo repositório
+
+skills/contratacoes-14133/
   SKILL.md                              # comportamento e fluxo de trabalho da skill
   references/
     dfd-topicos.md                      # estrutura do DFD (Decreto nº 10.947/2022, IN SGD/ME nº 94/2022)
@@ -47,18 +51,33 @@ IPP-AGU-fev-2024.md        # Instrumento de Padronização dos Procedimentos de 
 modelos-tr-*/               # modelos .docx de TR publicados pela AGU (contratação direta / pregão-concorrência / TIC)
 modelos-outros/              # outros modelos de referência (Mapa de Risco, formatação visual)
 listas-verificacao/          # listas de verificação oficiais
+
+.agents/skills/skill-creator/  # ferramenta de autoria/avaliação de skills (anthropics/skills), usada só para
+                                # desenvolver este repositório — não faz parte do plugin publicado
 ```
 
 Arquivos com dados pessoais reais (CPF, nomes, processos em andamento) ficam fora do controle de versão — ver `.gitignore`. Os arquivos de `references/` foram construídos a partir de exemplos reais do órgão do usuário, mas com esses dados removidos e generalizados na extração da estrutura.
 
 ## Como usar
 
-1. Copie (ou faça symlink) de `.agents/skills/contratacoes-14133/` para o diretório de skills do seu ambiente Claude Code.
-2. Inicie uma conversa mencionando DFD, ETP, TR, Parecer Técnico, Mapa de Riscos, licitação, dispensa, inexigibilidade, ou peça para montar/revisar a documentação de uma contratação — a skill dispara pela descrição em `SKILL.md`.
-3. Forneça o DFD (ou peça para a skill elaborá-lo) e a Portaria de designação da Equipe de Planejamento; a partir daí a skill conduz a entrevista de cada etapa.
+**Via plugin marketplace (recomendado)**, dentro do Claude Code:
+
+```
+/plugin marketplace add jhomolos/skill-14133
+/plugin install contratacoes-14133@contratacoes-14133-marketplace
+```
+
+**Manualmente**: copie `skills/contratacoes-14133/` para `.claude/skills/` (escopo do projeto) ou `~/.claude/skills/` (escopo pessoal) no seu ambiente Claude Code.
+
+Depois de instalada:
+
+1. Inicie uma conversa mencionando DFD, ETP, TR, Parecer Técnico, Mapa de Riscos, licitação, dispensa, inexigibilidade, ou peça para montar/revisar a documentação de uma contratação — a skill dispara pela descrição em `SKILL.md`.
+2. Forneça o DFD (ou peça para a skill elaborá-lo) e a Portaria de designação da Equipe de Planejamento; a partir daí a skill conduz a entrevista de cada etapa.
 
 ## Manutenção
 
 Os modelos de TR da AGU são atualizados periodicamente. Quando o usuário indicar uma versão mais nova, o arquivo de referência correspondente deve ser **substituído**, não mesclado com a versão anterior — ver a nota em `SKILL.md`, seção "Nota sobre os arquivos de referência".
 
-`skills-lock.json` registra a skill `skill-creator` (anthropics/skills), usada como ferramenta de autoria/avaliação desta skill — não faz parte do produto final.
+`skills-lock.json` e `.agents/skills/skill-creator/` registram a skill `skill-creator` (anthropics/skills), usada como ferramenta de autoria/avaliação deste repositório — não faz parte do plugin publicado em `.claude-plugin/`.
+
+Ao alterar `name` em `skills/contratacoes-14133/SKILL.md`, `.claude-plugin/plugin.json` e `.claude-plugin/marketplace.json`, mantenha os três sincronizados — o marketplace referencia o plugin pelo campo `name`, e o comando de instalação (`/plugin install <plugin>@<marketplace>`) depende dessa correspondência exata.
