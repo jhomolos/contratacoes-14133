@@ -61,19 +61,68 @@ Arquivos com dados pessoais reais (CPF, nomes, processos em andamento) ficam for
 
 ## Como usar
 
-**Via plugin marketplace (recomendado)**, dentro do Claude Code:
+### Claude Code (recomendado)
 
-```
+**Via plugin marketplace (mais prático):**
+
+```bash
 /plugin marketplace add jhomolos/contratacoes-14133
 /plugin install contratacoes-14133@contratacoes-14133-marketplace
 ```
 
-**Manualmente**: copie `skills/contratacoes-14133/` para `.claude/skills/` (escopo do projeto) ou `~/.claude/skills/` (escopo pessoal) no seu ambiente Claude Code.
+**Instalação manual:**
 
-Depois de instalada:
+Copie a pasta `skills/contratacoes-14133/` para:
+- `.claude/skills/` (escopo do projeto — sincroniza com time)
+- `~/.claude/skills/` (escopo pessoal — só na sua máquina)
 
-1. Inicie uma conversa mencionando DFD, ETP, TR, Parecer Técnico, Mapa de Riscos, licitação, dispensa, inexigibilidade, ou peça para montar/revisar a documentação de uma contratação — a skill dispara pela descrição em `SKILL.md`.
-2. Forneça o DFD (ou peça para a skill elaborá-lo) e a Portaria de designação da Equipe de Planejamento; a partir daí a skill conduz a entrevista de cada etapa.
+**Como invocar:**
+
+Mencione em uma conversa: "DFD", "ETP", "Termo de Referência", "Parecer Técnico", "Mapa de Riscos", "licitação", "dispensa", "inexigibilidade", ou peça para "montar/revisar documentação de contratação". A skill dispara automaticamente pela descrição em `SKILL.md`.
+
+Depois forneça o DFD (ou peça para a skill elaborá-lo) e a Portaria de designação da Equipe de Planejamento; a partir daí a skill conduz a entrevista de cada etapa.
+
+### Codex CLI (Anthropic)
+
+```bash
+codex skills add jhomolos/contratacoes-14133
+```
+
+Invocação: use os mesmos gatilhos de palavras-chave que no Claude Code (DFD, ETP, TR, etc.).
+
+### Outros agentes (Abacus, ChatGPT, etc.)
+
+A skill é um **conjunto de documentos de referência em Markdown** — não requer integração específica.
+
+**Opção 1: Como material de consulta**
+
+1. Clone ou baixe este repositório: `git clone https://github.com/jhomolos/contratacoes-14133.git`
+2. Carregue os arquivos de referência (`skills/contratacoes-14133/references/*.md`) no seu agente como documentos de contexto
+3. Peça ao agente para seguir o fluxo:
+   ```
+   DFD → Estudo Técnico Preliminar (ETP) 
+        + Mapa de Riscos (documento independente)
+        → Termo de Referência (TR) 
+        → Parecer Técnico (quando necessário)
+   ```
+
+**Opção 2: Passos manuais (sem integração)**
+
+Você pode usar a skill como um **guia estruturado**:
+
+1. Forneça o DFD ao seu agente
+2. Peça que siga os tópicos em `skills/contratacoes-14133/references/etp-topicos.md`
+3. Peça que consulte `skills/contratacoes-14133/references/enquadramento-legal-triagem.md` para triagem de enquadramento legal
+4. Continue com `termo-referencia-*.md` conforme o tipo de objeto (compras, serviços, TIC)
+5. Se necessário parecer técnico, consulte `parecer-tecnico-topicos.md`
+
+### Sem instalação (acesso direto ao repositório)
+
+Visite o repositório no GitHub: `https://github.com/jhomolos/contratacoes-14133`
+
+- Leia o `README.md` para contexto
+- Navegue até `skills/contratacoes-14133/references/` e abra os arquivos `.md` que precisa
+- Use-os como referência para estruturar sua documentação de contratação — o fluxo e os tópicos valem independentemente do agente usado
 
 ## Manutenção
 
