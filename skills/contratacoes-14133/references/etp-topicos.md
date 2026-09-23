@@ -40,6 +40,26 @@ Este bloco vem primeiro por três razões:
 
 A triagem também define qual arquivo de referência usar (TIC vs. genérico) e quais dos blocos seguintes são pertinentes.
 
+**Bloco 0.5 — Sistema de Registro de Preços (SRP) — só para licitação (pregão ou concorrência)**
+
+Se a triagem concluiu que a modalidade é **pregão ou concorrência** (não contratação direta), pergunte:
+
+- **Será um Registro de Preços ou um contrato único?**
+
+Explique brevemente as duas opções:
+
+| **Registro de Preços (SRP)** | **Contrato único** |
+|---|---|
+| A Administração registra um fornecedor (ou mais) e seus preços, e contrata **conforme a necessidade surgir** ao longo do período de validade (até 12 meses). Outros órgãos podem fazer **adesões** à ata, se permitido no edital. | A Administração contrata **toda a quantidade de uma vez**, com prazo e valor pré-definidos. Não há adesões. |
+| **Quando usar**: quando a necessidade é recorrente mas não pode ser precisada no momento da licitação (ex.: serviços de limpeza, fornecimento de material de consumo). | **Quando usar**: quando a quantidade, prazo e cronograma são bem definidos (ex.: construção de um prédio, aquisição de equipamentos para um projeto). |
+| **Risco**: pode haver subutilização da ata. | **Risco**: pode haver alterações de necessidade durante o período. |
+| **Implica no TR**: a estrutura do edital é distinta (sem quantitativos fixos, com preço por unidade/hora), a ata de registro de preços tem cláusula especial de adesão (se aplicável), e o contrato é substituído por autorização de fornecimento conforme demanda. | **Implica no TR**: quantitativos, prazos e cronograma devem estar fechados. |
+
+Se o usuário optar por SRP:
+- Registre no **tópico 5 do ETP** que será um Registro de Preços e se permitirá adesões.
+- Use o **edital de SRP** da AGU (fora do escopo desta skill — consulte o IPP, seção 11).
+- O **TR desta skill** continua válido, mas será referenciado no edital de SRP como **anexo técnico**.
+
 **Bloco 1 — Necessidade e resultado pretendido** (alimenta os tópicos 1, 11 e 14)
 - Como você chegou à conclusão de que precisa do produto desta contratação? O que aconteceu (ou deixou de acontecer) que evidenciou essa necessidade?
 - Qual problema, exatamente, esta contratação resolve?
