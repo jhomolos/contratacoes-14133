@@ -14,6 +14,7 @@ Para cada item, marque presente / ausente / incompleto:
 - [ ] Estudo Técnico Preliminar (ETP), cobrindo os 13 tópicos de `references/etp-topicos.md`
 - [ ] Mapa de Riscos (documento independente, elaborado em paralelo ao ETP — não é anexo dele)
 - [ ] Termo de Referência (TR), conforme modelo AGU vigente para a modalidade
+- [ ] Se pregão ou concorrência: definição de Registro de Preços (SRP) ou contrato único registrada no ETP e refletida nas alternativas "OU" do TR (ver "Bloco 0.5" em `references/etp-topicos.md`)
 - [ ] Parecer Técnico, quando a modalidade exigir (ver `references/parecer-tecnico-topicos.md`)
 - [ ] Outros documentos exigidos pela modalidade específica que o usuário tenha mencionado (ex.: justificativa de dispensa, pesquisa de preços formal, autorização da autoridade competente)
 - [ ] Publicação do ETP, do Mapa de Riscos e do TR no SIASG, cada um no módulo correspondente, sob a UASG (Unidade de Compra) do processo (regra informada pelo usuário)
