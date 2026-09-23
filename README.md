@@ -13,7 +13,7 @@ DFD → Estudo Técnico Preliminar (ETP) + Mapa de Riscos → Termo de Referênc
 ```
 
 - **Estudo Técnico Preliminar (ETP)** — genérico ou de TIC, com entrevista inicial adaptada à natureza do objeto (bem, serviço, curso, obra, TI etc.) em vez de um checklist fixo.
-- **Mapa de Gerenciamento de Riscos** — anexo obrigatório do ETP, atualizado a cada etapa seguinte da contratação.
+- **Mapa de Gerenciamento de Riscos** — documento independente, não um anexo do ETP; é elaborado em paralelo a ele e atualizado a cada etapa seguinte da contratação.
 - **Termo de Referência (TR)** — usando os modelos vigentes da AGU, um por tipo de objeto (compras, serviços/obras, TIC), cobrindo tanto licitação quanto contratação direta na mesma peça.
 - **Parecer Técnico** — cobre tanto a contratação direta (dispensa/inexigibilidade, com o inciso exato do art. 74/75, a prova documental exigida e a seção específica de cada hipótese) quanto os quatro cenários em que a lei também exige manifestação técnica dentro da licitação (banca de técnica e preço, bens/serviços especiais, amostra/prova de conceito, subsídio a recurso técnico).
 
@@ -25,6 +25,7 @@ A skill também **revisa documentação já pronta** — própria, de terceiros,
 - **Regra de ouro do modelo AGU**: nada do texto-modelo é apagado. Alternativas "OU" não escolhidas ficam riscadas e visíveis, com a motivação da escolha na própria minuta — acelera a análise jurídica e evidencia que cada opção foi ponderada.
 - **Regra da assertividade no Parecer Técnico**: ao contrário do ETP (art. 18, §2º, exige justificar todo tópico ausente), o parecer **omite sem justificar** as seções condicionais que não se aplicam ao caso concreto — cada parecer só contém o que precisa demonstrar.
 - **Portão de entrevista antes da redação do Parecer Técnico**: reúne, num único momento, tudo que falta perguntar (inciso exato, prova documental, alíneas, vedações do art. 14, idoneidade do fornecedor, instrumento contratual) em vez de intercalar perguntas com trechos já escritos.
+- **Orientação de publicação no SIASG**: depois de elaborados o ETP, o Mapa de Riscos e o TR, a skill lembra o usuário de publicá-los no módulo correspondente do SIASG, sob a UASG (Unidade de Compra) adequada — regra informada pelo usuário, não deduzida da lei.
 
 ## Estrutura do repositório
 

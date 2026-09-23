@@ -12,10 +12,11 @@ Para cada item, marque presente / ausente / incompleto:
 
 - [ ] Documento de Formalização de Demanda (DFD)
 - [ ] Estudo Técnico Preliminar (ETP), cobrindo os 13 tópicos de `references/etp-topicos.md`
-- [ ] Mapa de Riscos (anexo ou vinculado ao ETP)
+- [ ] Mapa de Riscos (documento independente, elaborado em paralelo ao ETP — não é anexo dele)
 - [ ] Termo de Referência (TR), conforme modelo AGU vigente para a modalidade
 - [ ] Parecer Técnico, quando a modalidade exigir (ver `references/parecer-tecnico-topicos.md`)
 - [ ] Outros documentos exigidos pela modalidade específica que o usuário tenha mencionado (ex.: justificativa de dispensa, pesquisa de preços formal, autorização da autoridade competente)
+- [ ] Publicação do ETP, do Mapa de Riscos e do TR no SIASG, cada um no módulo correspondente, sob a UASG (Unidade de Compra) do processo (regra informada pelo usuário)
 
 ## Passo 3: Checklist de coerência entre documentos
 

@@ -26,12 +26,12 @@ Detalhes e literalidade das regras: `references/ipp-agu-orientacoes.md`.
 
 ## Por que o fluxo importa
 
-Cada documento desta cadeia é insumo do seguinte: o ETP interpreta a necessidade descrita no DFD e a transforma em solução técnica justificada; o Mapa de Riscos nasce junto com o ETP porque os riscos identificados ali (e as ações de mitigação) alimentam diretamente o modelo de gestão do contrato; o TR só pode ser redigido com solidez depois que o ETP definiu a solução, os requisitos e as quantidades; e o Parecer Técnico, quando exigido pela modalidade, avalia essa cadeia já pronta. Gerar um documento sem ter o anterior como base é o erro mais comum e o que mais gera glosa/questionamento por controle interno ou órgãos de controle — por isso, sempre que possível, produza os documentos nessa ordem e reaproveite as decisões já tomadas (não repita a análise do zero a cada etapa).
+Cada documento desta cadeia é insumo do seguinte: o ETP interpreta a necessidade descrita no DFD e a transforma em solução técnica justificada; o Mapa de Riscos é elaborado em paralelo ao ETP — é **documento independente, não um anexo dele** —, porque os riscos identificados ali (e as ações de mitigação) alimentam diretamente o modelo de gestão do contrato; o TR só pode ser redigido com solidez depois que o ETP definiu a solução, os requisitos e as quantidades; e o Parecer Técnico, quando exigido pela modalidade, avalia essa cadeia já pronta. Gerar um documento sem ter o anterior como base é o erro mais comum e o que mais gera glosa/questionamento por controle interno ou órgãos de controle — por isso, sempre que possível, produza os documentos nessa ordem e reaproveite as decisões já tomadas (não repita a análise do zero a cada etapa).
 
 ## Fluxo de trabalho
 
 ```
-DFD → Estudo Técnico Preliminar (ETP) + Mapa de Riscos (anexo do ETP) → Termo de Referência (TR) → Parecer Técnico (quando a modalidade exigir)
+DFD → Estudo Técnico Preliminar (ETP) e Mapa de Riscos (documentos independentes, elaborados em paralelo) → Termo de Referência (TR) → Parecer Técnico (quando a modalidade exigir)
 ```
 
 ### Passo 0: Ler e validar o DFD e a publicação da Equipe de Planejamento
@@ -67,6 +67,8 @@ Consulte `references/ipp-agu-orientacoes.md` para saber o que a AGU espera em ca
 
 ### Passo 2: Mapa de Riscos
 
+**O Mapa de Riscos é documento independente, não um anexo do ETP** — nasce em paralelo a ele e tem vida própria ao longo da contratação (ver abaixo). Trate-o como peça autônoma da instrução processual, não como uma seção a mais dentro do ETP.
+
 **Antes de elaborar, verifique se ele é exigível**: nas contratações diretas, o gerenciamento de riscos pode ser dispensado (art. 72, I, da Lei nº 14.133/2021), **exceto quanto à fase de gestão do contrato**, e desde que a justificativa seja juntada aos autos. Pergunte ao usuário se ele quer usar essa faculdade antes de produzir um mapa completo.
 
 Leia `references/mapa-riscos-modelo.md`. Contém a estrutura real do órgão (introdução, escala de probabilidade/impacto, tabela-síntese de riscos, um bloco de avaliação por risco, aprovação e assinatura), além de riscos-exemplo observados em contratações reais — use-os como inspiração de nível de detalhe, não como lista fechada a copiar. O IPP é expresso ao exigir pertinência com as especificidades do caso e **vedar indicações genéricas e meramente protocolares**.
@@ -95,6 +97,8 @@ Consulte `references/ipp-agu-orientacoes.md` (seção "Termo de Referência — 
 Como esses modelos são atualizados periodicamente pela AGU, se em algum momento o usuário indicar uma versão mais nova, substitua o arquivo de referência correspondente em vez de tentar mesclar as duas versões.
 
 Reaproveite diretamente do ETP: descrição da solução, requisitos, quantidades, estimativa de valor e resultado do levantamento de mercado. Não peça essas informações de novo ao usuário se já estiverem no ETP gerado nesta mesma conversa — apenas encaixe-as na estrutura do modelo AGU vigente.
+
+**Publicação no SIASG (regra informada pelo usuário).** Depois de elaborados o ETP, o Mapa de Riscos e o TR, oriente o usuário a publicá-los no SIASG, cada um no módulo correspondente (ex.: ETP Digital, PGC, TR Digital — ver `references/ipp-agu-orientacoes.md`), sob a **UASG (Unidade de Compra) adequada** ao processo. Não presuma qual é a UASG correta — pergunte, se ainda não tiver sido informada nos documentos anteriores (DFD, Portaria de designação). Essa publicação é distinta da divulgação no PNCP tratada em `references/parecer-tecnico-topicos.md` (que incide sobre o contrato já formalizado, não sobre as peças de planejamento).
 
 ### Passo 4: Parecer Técnico (quando aplicável)
 
