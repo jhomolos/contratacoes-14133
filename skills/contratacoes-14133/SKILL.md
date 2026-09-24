@@ -11,18 +11,49 @@ Esta skill ajuda requisitantes, equipe técnica e equipe administrativa de contr
 
 Ao adaptar um modelo da AGU/SEGES ao caso concreto, **não remova nada**. A AGU orienta (IPP, p. 54-55) que as alternativas não escolhidas permaneçam visíveis e riscadas, e que a motivação das alterações fique na própria minuta — isso acelera a análise pela consultoria jurídica e evidencia que o gestor ponderou cada opção, em vez de entregar um texto "limpo" que esconde as escolhas feitas.
 
-Use este código de formatação visual em todo documento derivado de modelo:
+### 1. Preserve o modelo como ele é
 
-| Ação | Formatação | Uso |
-|---|---|---|
-| Inclusão | Fonte **vermelha** | Texto novo, inexistente no modelo |
-| Ajustes | Fonte **verde** | Alteração de redação de texto já existente |
-| Preenchimento | Fonte **azul** | Lacunas do modelo preenchidas com dados do caso |
-| Supressão | ~~Tachado~~ | Trecho do modelo que não se aplica — permanece visível, riscado |
+Os modelos de TR da AGU já vêm com o seu próprio esquema de cores e realces (legenda no topo de cada `references/termo-referencia-*.md`): preto = texto invariável; vermelho itálico = texto a preencher ou adotar; realces coloridos = cláusulas de SRP, dedicação exclusiva de mão de obra, obras/engenharia, margem de preferência ou alteradas na versão. No documento produzido:
 
-Em Markdown, use `~~texto~~` para supressão e marcação explícita para as cores (ex.: `<span style="color:blue">15 (quinze) dias úteis</span>`), ou entregue em formato que preserve cor quando o usuário pedir .docx. Quando o modelo oferece alternativas "OU" no mesmo tópico, risque a não escolhida e mantenha-a — nunca a delete.
+- **Mantenha a numeração e a hierarquia dos parágrafos exatamente como no modelo** (`## 5. MODELO DE EXECUÇÃO DO OBJETO`, `5.1.`, `5.1.1` …). Parágrafo riscado conserva o número, para que a numeração continue igual à do modelo e a consultoria jurídica possa comparar item a item. Parágrafo novo recebe o número seguinte da subseção, em vermelho.
+- **Mantenha cores, realces, negrito, itálico e sublinhado do modelo** nos trechos aproveitados. Não "limpe" o vermelho itálico para preto nem retire realces: segundo a própria AGU, isso só se faz na versão final, depois da análise jurídica.
+
+### 2. Marque suas alterações com o código do IPP (p. 54-55)
+
+| Ação | Formatação | Quando usar | Exemplo |
+|---|---|---|---|
+| Inclusão | Fonte **vermelha** | Todo texto novo, **inclusive o que substitui um campo do modelo** como `[INSERIR OBJETO]`: o campo entre colchetes sai e o conteúdo entra em vermelho | "Aquisição de <span style="color:red">material de apoio de bancadas e seringas</span>, nos termos da tabela abaixo" |
+| Ajuste | Fonte **verde** | Mudança de redação de texto que já existe no modelo. Se uma palavra do modelo for trocada, ela fica riscada logo antes da nova | "O prazo <span style="color:green">não</span> poderá ser prorrogado" |
+| Prazo | Fonte **azul** | **Somente** o prazo informado em número com o extenso. O restante do preenchimento do mesmo campo segue a regra da inclusão (vermelho) | modelo: "vigência de [indicar o prazo, limitado a cinco anos] contados do(a) [termo inicial]" → "vigência de <span style="color:blue">5 (cinco) anos</span> contados <span style="color:red">da assinatura do contrato</span>" |
+| Supressão | ~~Tachado~~ | Trecho do modelo que não se aplica: permanece visível, riscado | "<s>7.24. A presente contratação permite a antecipação de pagamento…</s>" |
+
+Sintaxe no Markdown: `<span style="color:red">…</span>`, `<span style="color:green">…</span>`, `<span style="color:blue">…</span>` e `<s>…</s>` (prefira `<s>` a `~~`, que não funciona dentro de spans). Quando o usuário pedir .docx, use as cores de fonte e o tachado do Word. Quando o modelo oferece alternativas "OU", risque a não escolhida **e o próprio "OU"**, e mantenha tudo visível.
 
 Detalhes e literalidade das regras: `references/ipp-agu-orientacoes.md`.
+
+## Comentários do assistente: sempre em roxo, fora do texto do documento
+
+Qualquer coisa que você escreva para o usuário, e não para o documento (pedido de confirmação, dúvida, alerta, sugestão, explicação de uma escolha), vai em **roxo** e rotulada, para nunca se confundir com o texto do documento nem com as cores do código do IPP:
+
+`<span style="color:#7030A0">[Comentário do assistente: confirme se o curso terá material impresso; se sim, o tópico 14 muda.]</span>`
+
+- O roxo (`#7030A0`) é reservado para comentários: nunca o use em texto do documento, e nunca use vermelho, verde, azul ou realces para comentários.
+- Prefira deixar comentários fora do corpo: lacunas no texto (ex.: `[nº do processo]`) e uma lista **"Pendências consolidadas"** ao final do documento, também em roxo, fora da numeração. Use comentário inline só quando ele precisa estar ao lado do trecho a que se refere.
+- Em .docx, use comentários do Word (ou fonte roxa, se não for possível).
+- Antes da versão final, os comentários são removidos; a lista de pendências também, quando todas estiverem resolvidas.
+
+## Como entrevistar: janelas de decisão, não redações
+
+O usuário não deve ter de redigir textos inteiros durante a entrevista. Para cada ponto que depende dele:
+
+1. **Proponha as respostas.** Com base no DFD, no que já foi dito e na sua pesquisa, redija 2 a 4 alternativas plausíveis (fatos prováveis ou minutas do trecho do documento) e apresente-as como opções clicáveis com a ferramenta `AskUserQuestion`. Use o campo `preview` para mostrar a minuta completa de cada opção e marque a recomendada como a primeira, com "(Recomendado)". O usuário sempre pode escolher "Outro" e escrever.
+2. **Agrupe.** Até 4 perguntas por janela; junte as que forem do mesmo bloco da entrevista.
+3. **Pergunta aberta só para o que você não tem como supor**: números, nomes, datas, identificadores (nº do processo, item do PCA, CPF).
+4. Se a ferramenta de opções clicáveis não estiver disponível no ambiente, apresente as alternativas numeradas para o usuário responder só com o número.
+
+## Seja parceiro, não só entrevistador
+
+O objetivo é elaborar o documento junto com o usuário. Pesquise por conta própria o que é pesquisável: alternativas de mercado com links, código CATMAT/CATSER, enquadramento no Guia Nacional de Contratações Sustentáveis, normas técnicas aplicáveis, preços públicos de referência. Traga a redação pronta, aponte fragilidades (justificativa genérica, quantidade sem memória de cálculo, prova que falta nos autos) e sugira como resolvê-las. Deixe ao usuário as decisões e os fatos que só ele conhece.
 
 ## Por que o fluxo importa
 
@@ -53,11 +84,11 @@ Se o DFD estiver incompleto para permitir um ETP consistente (falta a descriçã
 
 **Comece pela triagem de enquadramento legal.** Leia `references/enquadramento-legal-triagem.md` e conduza-a antes de qualquer outra pergunta do ETP. O usuário desta skill é requisitante ou equipe técnica, não advogado: ele raramente sabe se o caso é pregão, concorrência, dispensa ou inexigibilidade, e quase nunca sabe qual dos 5 incisos do art. 74 ou dos 18 incisos do art. 75 se aplica. **Nunca pergunte "qual é o enquadramento legal?" nem "é dispensa ou inexigibilidade?" de saída** — pergunte os fatos que a triagem lista (natureza do objeto, valor estimado e somatório do exercício, quantos fornecedores existem, quem é o contratado, se há urgência ou licitação anterior fracassada) e **apresente a conclusão para ele confirmar**, com artigo, inciso e alínea.
 
-Essa triagem vem primeiro porque é no ETP que a modalidade se define (o tópico 5 exige a declaração do dispositivo), porque o TR do Passo 3 depende dela para escolher o modelo da AGU e as alternativas "OU", e porque o resultado dela pode **dispensar o próprio ETP** (art. 14 da IN SEGES/ME nº 58/2022 — incisos I, II, III, VII e VIII do art. 75; e art. 72, I, que exige ETP na contratação direta apenas "se for o caso").
+Essa triagem vem primeiro porque é no ETP que a modalidade se define (o tópico 6 exige a declaração do dispositivo), porque o TR do Passo 3 depende dela para escolher o modelo da AGU e as alternativas "OU", e porque o resultado dela pode **dispensar o próprio ETP** (art. 14 da IN SEGES/ME nº 58/2022 — incisos I, II, III, VII e VIII do art. 75; e art. 72, I, que exige ETP na contratação direta apenas "se for o caso").
 
 Definido o objeto: se **não** for de TIC, leia `references/etp-topicos.md` para os tópicos obrigatórios e a numeração usada pelo órgão. Se **for** de TIC, use `references/etp-tic-topicos.md` em vez do genérico — a estrutura de TIC é substancialmente mais detalhada (levantamento e análise comparativa de soluções alternativas, registro de soluções inviáveis, TCO) e não deve ser substituída pela genérica.
 
-**Depois da triagem, se o resultado for licitação (pregão ou concorrência), pergunte se será um Registro de Preços (SRP) ou um contrato único** — ver o "Bloco 0.5" em `references/etp-topicos.md`. Essa escolha afeta a estrutura do edital e do TR, e deve estar registrada no tópico 5 do ETP.
+**Depois da triagem, se o resultado for licitação (pregão ou concorrência), pergunte se será um Registro de Preços (SRP) ou um contrato único** — ver o "Bloco 0.5" em `references/etp-topicos.md`. Essa escolha afeta a estrutura do edital e do TR, e deve estar registrada no tópico 6 do ETP.
 
 **Conduza a entrevista inicial** descrita em `references/etp-topicos.md` (seção "Entrevista inicial", Blocos 1 a 8). O DFD quase nunca traz contexto suficiente: é preciso entender como o usuário concluiu que precisa do objeto, qual problema exatamente ele resolve, qual a aplicação prática, o que se pretende alcançar depois, e quem são os beneficiários indiretos. Trate também insumos, forma de medição do resultado, garantia, antecipação de pagamento e sustentabilidade. **As quantidades do DFD são ponto de partida, não dado fechado** — confirme-as com o usuário.
 
@@ -65,7 +96,9 @@ Definido o objeto: se **não** for de TIC, leia `references/etp-topicos.md` para
 
 Percorra cada tópico interagindo com o usuário sempre que a informação não estiver disponível — não preencha tópicos como estimativa de valor, levantamento de mercado ou análise comparativa de soluções com dados fictícios; peça a fonte ou marque o tópico como pendente.
 
-Consulte `references/ipp-agu-orientacoes.md` para saber o que a AGU espera em cada campo. Regra central: **campo não preenchido exige justificativa expressa** (art. 18, §2º) — nunca omita um tópico em silêncio; escreva por que não se aplica. Sustentabilidade em particular: mesmo objetos aparentemente neutros exigem enquadramento no Guia Nacional de Contratações Sustentáveis, e a inaplicabilidade precisa ser justificada pela área técnica.
+Consulte `references/ipp-agu-orientacoes.md` para saber o que a AGU espera em cada campo. Regra central: **campo não preenchido exige justificativa expressa** (art. 18, §2º) — nunca omita um tópico em silêncio; escreva por que não se aplica. Sustentabilidade em particular: mesmo objetos aparentemente neutros exigem enquadramento no Guia Nacional de Contratações Sustentáveis. **Faça você o enquadramento** seguindo `references/guia-contratacoes-sustentaveis.md` (tema da Parte Específica com número e página, ou fundamentação pela Parte Geral), e, se nada se aplicar, redija a minuta da justificativa de inaplicabilidade para a área técnica endossar.
+
+Siga o "Estilo de redação" de `references/etp-topicos.md`: texto corrido em parágrafos, links para cada alternativa do levantamento de mercado (os PDFs dessas páginas são os anexos do ETP) e pendências só na lista consolidada ao final.
 
 ### Passo 2: Mapa de Riscos
 
@@ -88,6 +121,8 @@ O TR segue o modelo disponibilizado pela Advocacia-Geral da União (AGU), que é
 - `references/termo-referencia-compras-tic.md` — aquisição de bens de Tecnologia da Informação e Comunicação (TIC).
 - `references/termo-referencia-servicos-tic.md` — serviços de Tecnologia da Informação e Comunicação (TIC).
 
+Cada modelo tem um arquivo irmão `termo-referencia-*-notas.md` com as **notas explicativas da AGU** (comentários do Word), indexadas pelo número do item. Não leia o arquivo inteiro: ao decidir uma alternativa "OU", riscar uma cláusula ou alterar texto preto, busque a nota do item correspondente. As notas orientam a escolha, mas não entram no TR.
+
 Os modelos de TIC têm seções próprias que os modelos genéricos não têm (alinhamento a PDTIC e à Estratégia de Governo Digital, requisitos organizados por categoria, propriedade intelectual, transferência de conhecimento) — nunca use o modelo genérico de compras/serviços para um objeto de TIC, e vice-versa. Se não estiver claro se o objeto é ou não de TIC, pergunte ao usuário.
 
 Note também que a AGU publica, separadamente, um **Termo de Contrato** para serviços (dividido em com/sem dedicação exclusiva de mão de obra) — esse é o instrumento contratual que cita o TR como anexo, não o TR em si. Está fora do escopo atual desta skill; se o usuário pedir ajuda com o Termo de Contrato, avise que ainda não há suporte para esse documento e pergunte se ele quer que seja adicionado.
@@ -95,6 +130,13 @@ Note também que a AGU publica, separadamente, um **Termo de Contrato** para ser
 Para redigir o TR: identifique o tipo de objeto (compras vs. serviços/obras, TIC vs. não-TIC) para escolher o arquivo certo dentre os quatro acima. A modalidade e o dispositivo legal **já vêm definidos pela triagem do Passo 1** (`references/enquadramento-legal-triagem.md`) — reaproveite-os em vez de perguntar de novo; se o usuário chegou direto ao TR sem ETP, conduza a triagem agora, porque sem ela não é possível escolher as alternativas "OU" do modelo. Da mesma forma, **reaproveite a resposta do Bloco 0.5 do ETP** (`references/etp-topicos.md`) sobre Sistema de Registro de Preços (SRP) — não pergunte de novo; se o usuário chegou direto ao TR sem ETP, pergunte agora. Essa resposta muda alternativas "OU" do próprio modelo (ex.: critério de aceitabilidade de preços unitários máximos por grupo de itens, e a adequação orçamentária, exigível no SRP apenas antes da assinatura do contrato, não na elaboração do TR). Considere também as características do caso (regime de execução, dedicação exclusiva de mão de obra, etc.) para saber quais alternativas "OU" do modelo usar. **Risque as alternativas não escolhidas, não as apague** — ver "Regra de ouro" acima.
 
 Consulte `references/ipp-agu-orientacoes.md` (seção "Termo de Referência — como preencher") para o detalhamento do que a AGU espera em cada elemento, especialmente: o prazo de vigência deve ser a **soma** dos prazos de execução, reparo, recebimento provisório, definitivo e pagamento (não um número arbitrário); a diferença entre **garantia do produto/serviço (CDC)** e **garantia de execução do contrato** (arts. 96 a 102), que devem aparecer separadamente; e a definição da forma de aferição/medição do serviço para pagamento com base em resultado, com unidade de medida que evite remunerar por horas ou postos de trabalho.
+
+Pontos jurídicos que já geraram erro em rascunhos desta skill. Confira-os em todo TR:
+
+- **Nota de empenho no lugar do termo de contrato** (art. 95, I): a lei fala em "dispensa em razão de valor", mas a **Orientação Normativa AGU nº 84/2024** admite a substituição também em licitação e **inexigibilidade**, desde que o valor caiba no limite do art. 75, II (compras e serviços em geral) ou do art. 75, I (obras, engenharia e manutenção de veículos). Cite a ON ao usar o Anexo I do modelo numa inexigibilidade.
+- **Cláusula de reajuste é obrigatória mesmo em contrato curto** (art. 25, §7º): não risque a seção "Reajuste" só porque a vigência é inferior a um ano. Risque apenas a alternativa de repactuação quando não houver dedicação exclusiva de mão de obra.
+- **Habilitação reduzida por valor** (art. 70, III): abaixo de 1/4 do limite de dispensa para compras, a documentação de habilitação pode ser dispensada total ou parcialmente. Ao riscar a qualificação econômico-financeira ou técnica, insira em vermelho a frase que invoca o dispositivo, em vez de só riscar.
+- **Vigência** deve ser a soma dos prazos de execução, recebimento provisório e definitivo, liquidação e pagamento: mostre a conta num comentário do assistente.
 
 Como esses modelos são atualizados periodicamente pela AGU, se em algum momento o usuário indicar uma versão mais nova, substitua o arquivo de referência correspondente em vez de tentar mesclar as duas versões.
 
@@ -119,7 +161,7 @@ Identificada a hipótese, leia `references/parecer-tecnico-topicos.md`. Se for u
 
 Se for dispensa ou inexigibilidade, conduza **toda** a seção "Entrevista antes de redigir (portão obrigatório)" antes de escrever qualquer texto do parecer — ela reúne, num único momento, tudo que falta pedir ao usuário e decide quais seções condicionais entram no documento (só entram as pertinentes ao inciso e ao caso concreto; o parecer não segue a regra do ETP de justificar tópicos ausentes — ver "Regra da assertividade" no mesmo arquivo). O arquivo traz a estrutura comum e, na seção "Enquadramento legal", uma tabela com cada um dos 5 incisos do art. 74 (inexigibilidade) e dos 18 incisos do art. 75 (dispensa) — cada inciso pede uma prova documental e uma seção extra do parecer diferentes (ex.: notória especialização exige currículo/portfólio e seção própria; exclusividade de fornecedor exige atestado de exclusividade; imóvel exige laudo de singularidade).
 
-O inciso exato já deve estar definido pela triagem do Passo 1 e declarado no tópico 5 do ETP — reaproveite-o. Se o usuário chegou direto ao Parecer Técnico, ou se o ETP cita só o artigo sem o inciso, **conduza antes a triagem de `references/enquadramento-legal-triagem.md`**: não pergunte "qual o inciso?" a quem pode não saber responder, e nunca invente o enquadramento nem generalize "dispensa"/"inexigibilidade" sem o inciso. Lembre também o art. 72, que lista os oito documentos de instrução do processo de contratação direta, e o art. 73, que responsabiliza solidariamente contratado e agente público pela contratação direta indevida com dolo, fraude ou erro grosseiro.
+O inciso exato já deve estar definido pela triagem do Passo 1 e declarado no tópico 6 do ETP — reaproveite-o. Se o usuário chegou direto ao Parecer Técnico, ou se o ETP cita só o artigo sem o inciso, **conduza antes a triagem de `references/enquadramento-legal-triagem.md`**: não pergunte "qual o inciso?" a quem pode não saber responder, e nunca invente o enquadramento nem generalize "dispensa"/"inexigibilidade" sem o inciso. Lembre também o art. 72, que lista os oito documentos de instrução do processo de contratação direta, e o art. 73, que responsabiliza solidariamente contratado e agente público pela contratação direta indevida com dolo, fraude ou erro grosseiro.
 
 O parecer não se esgota no enquadramento e no preço. O mesmo arquivo traz, nas seções finais, o que a contratação direta exige **fora dos arts. 74 e 75** e que os modelos do órgão não cobriam: vedações de participação do art. 14 (que alcançam a execução do contrato, e não só a disputa), consulta a Ceis/Cnep e certidões do art. 91, §4º, habilitação mínima do art. 72, V, escolha do instrumento contratual do art. 95, prazo de 10 dias úteis de divulgação no PNCP de que depende a eficácia do contrato (art. 94, II), e a fronteira entre parecer técnico e parecer jurídico (art. 53, §§4º e 5º). Percorra o "Checklist de fechamento" ao final do arquivo antes de entregar — e **nunca afirme que uma verificação foi feita sem o usuário confirmar**; registre como pendência.
 
@@ -148,6 +190,10 @@ O texto integral da lei está em `lei-14133-2021.md` (raiz do projeto), para con
 `references/ipp-agu-orientacoes.md` destila o *Instrumento de Padronização dos Procedimentos de Contratação* (AGU/MGI), que é a referência oficial sobre **como preencher** cada artefato — enquanto os modelos de TR dizem *o que* escrever, o IPP diz *como e por quê*. Consulte-o ao elaborar ou revisar qualquer documento, e especialmente quando surgir a dúvida "esse campo pode ficar em branco?" (a resposta quase sempre é não: exige justificativa expressa).
 
 A versão integral do IPP está em `IPP-AGU-fev-2024.md` (raiz do projeto) e cobre também DFD, Portaria de designação da equipe de planejamento, gerenciamento de riscos, pesquisa de preços, declarações orçamentárias, minuta de edital (seção 11), minuta de contrato (seção 12) e adoção do Sistema de Registro de Preços (seção 13) — os três últimos fora do escopo atual de produção desta skill (ver nota sobre o Termo de Contrato no Passo 3), mas úteis para dúvidas pontuais. É uma conversão mais resumida que `ipp-agu-orientacoes.md`: para as seções que este último já distila (DFD, Portaria de EPC, ETP, Mapa de Riscos, Pesquisa de Preços, TR, Autorização, Checklist), prefira sempre `ipp-agu-orientacoes.md`; consulte o arquivo integral apenas para Edital, Contrato ou Registro de Preços.
+
+## Referência transversal: Guia Nacional de Contratações Sustentáveis
+
+`references/guia-contratacoes-sustentaveis.md` traz o método de enquadramento do Guia da AGU (8ª ed., nov/2025), onde cada critério entra no ETP e no TR, e a lista dos 43 temas da Parte Específica com página. O texto integral está em `guia-nacional-contratacoes-sustentaveis-2025.txt` (raiz do projeto). Use-o no tópico 14 do ETP, na seção "Sustentabilidade" do TR e no alinhamento ao PLS (tópico 11 do ETP).
 
 ## Nota sobre os arquivos de referência
 

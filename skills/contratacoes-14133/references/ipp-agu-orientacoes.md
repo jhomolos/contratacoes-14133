@@ -20,9 +20,9 @@ Ao adaptar um modelo da AGU/SEGES ao caso concreto, **não apague nada**. A AGU 
 
 | Ação | Formatação | O que significa |
 |---|---|---|
-| **Inclusão** | Fonte **vermelha** | Texto novo, que não existia no modelo |
-| **Ajustes** | Fonte **verde** | Alteração de redação de texto já existente no modelo |
-| **Preenchimento** | Fonte **azul** | Preenchimento das lacunas propositalmente deixadas no modelo |
+| **Inclusão** | Fonte **vermelha** | Texto novo, que não existia no modelo — **inclusive o conteúdo que substitui um campo como `[INSERIR OBJETO]`** (exemplo do IPP: "Aquisição de material de apoio de bancadas e seringas" em vermelho) |
+| **Ajustes** | Fonte **verde** | Alteração de redação de texto já existente no modelo (exemplo do IPP: "O prazo para recebimento definitivo não poderá ser prorrogado") |
+| **Preenchimento** | Fonte **azul** | **Somente o prazo em número com o extenso** (exemplo do IPP: "no prazo de 15 (quinze) dias úteis"). Regra confirmada pelo usuário: de "[indicar o prazo, limitado a cinco anos]", só "5 (cinco) anos" fica azul |
 | **Supressão** | ~~Trecho tachado~~ | Texto do modelo que não se aplica — permanece visível, riscado |
 
 Regras associadas, na literalidade do IPP:
@@ -33,7 +33,7 @@ Regras associadas, na literalidade do IPP:
 
 O mesmo código aparece aplicado nos próprios modelos do IPP (Portaria de EPC, ofício de dotação, Nota Técnica de pesquisa de preços): as lacunas a preencher vêm em vermelho.
 
-Consequência prática: ao produzir um TR, ETP ou qualquer peça derivada de modelo AGU, entregue o documento com as alternativas não escolhidas **tachadas e visíveis**, os preenchimentos em azul, inclusões em vermelho e ajustes em verde — nunca um texto "limpo" já sem as opções descartadas.
+Consequência prática: ao produzir um TR, ETP ou qualquer peça derivada de modelo AGU, entregue o documento com as alternativas não escolhidas **tachadas e visíveis**, inclusões (inclusive o que substitui campos entre colchetes) em vermelho, ajustes em verde e só os prazos numéricos por extenso em azul, preservando a numeração, as cores e os realces do próprio modelo (ver "Regra de ouro" no `SKILL.md`) — nunca um texto "limpo" já sem as opções descartadas.
 
 ## Regra transversal 3: Declaração de utilização de modelos AGU/MGI
 

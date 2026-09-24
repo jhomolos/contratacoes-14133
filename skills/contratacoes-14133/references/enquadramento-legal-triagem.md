@@ -19,7 +19,7 @@ Nunca pergunte ao usuário "qual é o enquadramento legal?" como primeira pergun
 
 Três razões, todas de ordem prática:
 
-1. **É no ETP que se define a modalidade.** O ETP é o documento em que a Administração entende o que está contratando; o enquadramento é consequência desse entendimento, e o tópico 5 do ETP exige a declaração expressa do dispositivo quando houver contratação direta.
+1. **É no ETP que se define a modalidade.** O ETP é o documento em que a Administração entende o que está contratando; o enquadramento é consequência desse entendimento, e o tópico 6 do ETP exige a declaração expressa do dispositivo quando houver contratação direta.
 2. **Sem ETP não há TR.** O Termo de Referência escolhe o modelo da AGU e as alternativas "OU" internas em função da modalidade — não é possível redigi-lo antes.
 3. **A própria exigibilidade do ETP depende do resultado da triagem.** Pelo art. 14 da IN SEGES/ME nº 58/2022, o ETP é dispensável nas hipóteses dos **incisos I, II, III, VII e VIII do art. 75**, do **§7º do art. 90**, e nas **prorrogações de contratos de serviços e fornecimentos contínuos** — em todos os casos exigindo justificativa expressa nos autos. Se a triagem cair num desses incisos, pergunte ao usuário se ele pretende usar a faculdade: pode não haver ETP a elaborar, e sim uma justificativa a juntar aos autos. Do mesmo modo, o art. 72, I, admite que o ETP, a análise de riscos e o TR entrem "se for o caso" na contratação direta.
 
@@ -174,12 +174,12 @@ Todos já custaram responsabilização. O art. 73 é expresso: **contratação d
 
 Depois de concluída a triagem, apresente ao usuário a conclusão em uma frase — *"pelo que você descreveu, isto é inexigibilidade com base no art. 74, III, alínea 'f', da Lei nº 14.133/2021; confirma?"* — e só então prossiga. Registre:
 
-- **ETP, tópico 5** (descrição da solução como um todo): a declaração do dispositivo aplicável, com artigo, inciso e alínea.
-- **ETP, tópico 4** (levantamento de mercado): os fatos que sustentam o enquadramento — quantos fornecedores existem, o que a pesquisa encontrou. É aqui que a inviabilidade de competição do art. 74 se comprova, não no parecer.
+- **ETP, tópico 6** (descrição da solução como um todo): a declaração do dispositivo aplicável, com artigo, inciso e alínea.
+- **ETP, tópico 5** (levantamento de mercado): os fatos que sustentam o enquadramento — quantos fornecedores existem, o que a pesquisa encontrou. É aqui que a inviabilidade de competição do art. 74 se comprova, não no parecer.
 - **Mapa de Riscos**: o risco de questionamento do enquadramento, quando a triagem tiver ficado entre duas hipóteses.
 - **Parecer Técnico**: a seção "DA MODALIDADE DA LICITAÇÃO" e a seção extra específica do inciso — ver as tabelas de `parecer-tecnico-topicos.md`, que dizem qual documento comprobatório pedir ao usuário para o inciso identificado aqui.
 
-Se a conclusão desta etapa for **pregão ou concorrência** (não contratação direta), pergunte também se será **Registro de Preços (SRP) ou contrato único** — ver "Bloco 0.5" em `etp-topicos.md`. Registre a resposta no mesmo tópico do dispositivo aplicável (ETP, tópico 5, ou tópico 15 no ETP de TIC), porque ela também condiciona as alternativas "OU" do Termo de Referência (Passo 3 do `SKILL.md`).
+Se a conclusão desta etapa for **pregão ou concorrência** (não contratação direta), pergunte também se será **Registro de Preços (SRP) ou contrato único** — ver "Bloco 0.5" em `etp-topicos.md`. Registre a resposta no mesmo tópico do dispositivo aplicável (ETP, tópico 6, ou tópico 15 no ETP de TIC), porque ela também condiciona as alternativas "OU" do Termo de Referência (Passo 3 do `SKILL.md`).
 
 Se a contratação for direta, lembre o usuário de que o art. 72 exige que o processo seja instruído com: DFD e, se for o caso, ETP, análise de riscos e TR (I); estimativa de despesa na forma do art. 23 (II); parecer jurídico e pareceres técnicos, se for o caso (III); demonstração de compatibilidade orçamentária (IV); comprovação de habilitação e qualificação mínima do contratado (V); razão da escolha do contratado (VI); justificativa de preço (VII); e autorização da autoridade competente (VIII) — além da **divulgação do ato que autoriza a contratação direta ou do extrato do contrato em sítio eletrônico oficial** (parágrafo único).
 
