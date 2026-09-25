@@ -1,8 +1,8 @@
 {
   "name": "contratacoes-14133",
   "displayName": "Contratações Públicas — Lei 14.133/2021",
-  "version": "1.0.0",
-  "description": "Elabora e revisa a documentação técnica de contratações públicas federais sob a Lei 14.133/2021 (DFD, ETP, Mapa de Riscos, Termo de Referência, Parecer Técnico), com triagem de enquadramento legal a partir de perguntas de fato.",
+  "version": "1.1.0",
+  "description": "Elabora e revisa a documentação técnica de contratações públicas federais sob a Lei 14.133/2021 (DFD, ETP, Mapa de Riscos, Termo de Referência, Parecer Técnico) e a especificação técnica de itens (arts. 41 e 42, indicação de marca), com triagem de enquadramento legal a partir de perguntas de fato.",
   "author": {
     "name": "jhomolos",
     "url": "https://github.com/jhomolos"
@@ -17,6 +17,9 @@
     "termo-de-referencia",
     "parecer-tecnico",
     "administracao-publica",
-    "brasil"
+    "brasil",
+    "especificacao-tecnica",
+    "catmat",
+    "indicacao-de-marca"
   ]
 }

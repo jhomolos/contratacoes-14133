@@ -91,6 +91,7 @@ Se o usuário optar por SRP:
 - Há questões de frete, entrega ou deslocamento?
 - Cabe subcontratação?
 - Existe item no Catálogo Eletrônico de Padronização (CATMAT/CATSER) que corresponda ao objeto? Busque você o código provável e peça confirmação. A resposta alimenta a tabela de itens do TR, não o texto do ETP.
+- (Se o objeto for bem com fabricante identificável, ou houver PN, CFF/CAGE, opcionais ou marca em jogo) Siga `references/especificacao/fluxo-especificacao.md`: ele define a especificação por desempenho, decide com o usuário se a marca entra como referência, é exigida ou fica de fora (art. 41), e levanta os equivalentes que vão, com link, para o tópico 5. Marca exigida precisa de justificativa neste ETP.
 
 **Bloco 4 — Medição do resultado** (alimenta o tópico 12 e o modelo de gestão do TR)
 - Como o produto da contratação será medido/aferido? Qual a unidade de medida que permite verificar o resultado?

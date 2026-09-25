@@ -17,6 +17,8 @@ DFD → Estudo Técnico Preliminar (ETP) + Mapa de Riscos → Termo de Referênc
 - **Termo de Referência (TR)** — usando os modelos vigentes da AGU, um por tipo de objeto (compras, serviços/obras, TIC), cobrindo tanto licitação quanto contratação direta na mesma peça.
 - **Parecer Técnico** — cobre tanto a contratação direta (dispensa/inexigibilidade, com o inciso exato do art. 74/75, a prova documental exigida e a seção específica de cada hipótese) quanto os quatro cenários em que a lei também exige manifestação técnica dentro da licitação (banca de técnica e preço, bens/serviços especiais, amostra/prova de conceito, subsídio a recurso técnico).
 
+- **Especificação técnica de itens** (arts. 41 e 42) — descrição de bens e serviços por desempenho, a partir de PN, CFF/CAGE e opcionais de fabricante, com decisão guiada sobre indicar a marca como referência ("similar ou superior"), exigi-la com justificativa ou omiti-la, e levantamento de equivalentes para a pesquisa de mercado. Funciona dentro do ETP/TR ou de forma avulsa (um item, uma lista, uma planilha de plano de aquisição). Incorporada da skill `especificacao-tecnica-lei14133`.
+
 A skill também **revisa documentação já pronta** — própria, de terceiros, ou um checklist processual completo — apontando ausências e inconsistências em vez de reescrever do zero.
 
 ## O que torna o fluxo diferente de preencher um modelo
@@ -42,14 +44,27 @@ skills/contratacoes-14133/
     etp-topicos.md                      # ETP genérico + entrevista inicial condicional
     etp-tic-topicos.md                  # ETP de TIC (IN SGD/ME nº 94/2022)
     mapa-riscos-modelo.md               # Mapa de Gerenciamento de Riscos
-    termo-referencia-*.md               # modelos de TR da AGU (compras / serviços-obras × TIC / não-TIC)
+    termo-referencia-*.md               # modelos de TR da AGU (compras / serviços-obras × TIC / não-TIC), com numeração, cores e realces
+    termo-referencia-*-notas.md         # notas explicativas da AGU de cada modelo, indexadas pelo número do item
     parecer-tecnico-topicos.md          # Parecer Técnico: contratação direta (art. 74/75) e licitação (arts. 36-38, 41-42, 165)
     ipp-agu-orientacoes.md              # digest do IPP da AGU/MGI (como preencher cada campo, e por quê)
+    guia-contratacoes-sustentaveis.md   # enquadramento no Guia Nacional de Contratações Sustentáveis (AGU, 8ª ed.)
     checklist-completude.md             # roteiro de conferência processual
+    especificacao/                      # especificação técnica de itens (arts. 41-42)
+      fluxo-especificacao.md            #   fluxo de trabalho e onde cada saída entra no ETP/TR
+      regras_redacao.md                 #   redação por desempenho, sentido dos limites, VIM, serviços, erros comuns
+      fundamentacao_legal.md            #   hipóteses de indicação de marca e modelos de justificativa
+      condicoes_gerais.md               #   CG-1 a CG-12 e em que seção do modelo AGU cada uma entra
+      exemplos.md                       #   casos resolvidos
+  scripts/
+    modelo_docx_para_md.py              # converte modelo AGU .docx em Markdown (e extrai as notas com --notas)
+    verificar_especificacao.py          # confere formato e erros comuns das especificações (texto, .txt ou .xlsx)
 
 lei-14133-2021.md          # Lei nº 14.133/2021 convertida para Markdown (fonte: planalto.gov.br)
 IPP-AGU-fev-2024.md        # Instrumento de Padronização dos Procedimentos de Contratação, na íntegra
-modelos-tr-*/               # modelos .docx de TR publicados pela AGU (contratação direta / pregão-concorrência / TIC)
+guia-nacional-contratacoes-sustentaveis-2025.txt  # Guia Nacional de Contratações Sustentáveis (AGU, 8ª ed.), texto integral
+modelos-tr-pregao-conc/      # modelos .docx de TR da AGU (compras; serviços e obras), que cobrem licitação e contratação direta
+modelos-tr-tic/              # modelos .docx de TR da AGU para TIC (compras; serviços)
 modelos-outros/              # outros modelos de referência (Mapa de Risco, formatação visual)
 listas-verificacao/          # listas de verificação oficiais
 

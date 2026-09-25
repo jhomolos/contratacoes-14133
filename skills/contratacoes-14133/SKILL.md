@@ -1,6 +1,6 @@
 ---
 name: contratacoes-14133
-description: Elabora e revisa toda a documentação técnica exigida para contratações públicas federais sob a Lei 14.133/2021 (Nova Lei de Licitações e Contratos) — Estudo Técnico Preliminar (ETP), Mapa de Riscos, Termo de Referência (TR) e Parecer Técnico — a partir de um Documento de Formalização de Demanda (DFD) enviado pelo usuário. Também avalia a completude e a conformidade legal de documentação de contratação já elaborada (própria, de outra área, ou de um processo inteiro) frente aos requisitos da modalidade. Use esta skill sempre que o usuário mencionar DFD, ETP, Estudo Técnico Preliminar, Mapa de Riscos, Termo de Referência, TR, Parecer Técnico, licitação, contratação pública, Lei 14.133, pregão, dispensa de licitação, inexigibilidade, ou pedir para revisar, conferir ou montar a documentação de uma contratação — mesmo que não cite o nome exato do documento ou da lei.
+description: Elabora e revisa toda a documentação técnica exigida para contratações públicas federais sob a Lei 14.133/2021 (Nova Lei de Licitações e Contratos) — Estudo Técnico Preliminar (ETP), Mapa de Riscos, Termo de Referência (TR) e Parecer Técnico — a partir de um Documento de Formalização de Demanda (DFD) enviado pelo usuário, e redige ou revisa a especificação técnica de cada item (bens e serviços, arts. 41 e 42), inclusive a decisão de indicar ou exigir marca/modelo. Também avalia a completude e a conformidade legal de documentação de contratação já elaborada (própria, de outra área, ou de um processo inteiro) frente aos requisitos da modalidade. Use esta skill sempre que o usuário mencionar DFD, ETP, Estudo Técnico Preliminar, Mapa de Riscos, Termo de Referência, TR, Parecer Técnico, especificação técnica, descrição de item, CATMAT/CATSER, Part Number (PN), CFF/CAGE/NCAGE, opcionais de fabricante, indicação de marca, "similar ou superior", plano de aquisição ou planilha de itens, licitação, contratação pública, Lei 14.133, pregão, dispensa de licitação, inexigibilidade, ou pedir para revisar, conferir ou montar a documentação de uma contratação — mesmo que não cite o nome exato do documento ou da lei. Vale também para especificar itens avulsos, sem DFD: instrumentos e equipamentos de fabricantes tradicionais, peças de reposição, acessórios dedicados, itens comuns de mercado e serviços como calibração e manutenção.
 ---
 
 # Documentação de Contratações Públicas — Lei 14.133/2021
@@ -64,6 +64,8 @@ Cada documento desta cadeia é insumo do seguinte: o ETP interpreta a necessidad
 ```
 DFD → Estudo Técnico Preliminar (ETP) e Mapa de Riscos (documentos independentes, elaborados em paralelo) → Termo de Referência (TR) → Parecer Técnico (quando a modalidade exigir)
 ```
+
+**Pedido só de especificação?** Se o usuário quer apenas especificar ou revisar itens (um PN, uma lista de itens, uma planilha de plano de aquisição), vá direto à seção "Especificação técnica de itens" abaixo. Não exija DFD, Portaria nem triagem de enquadramento nesse caso.
 
 ### Passo 0: Ler e validar o DFD e a publicação da Equipe de Planejamento
 
@@ -129,6 +131,8 @@ Note também que a AGU publica, separadamente, um **Termo de Contrato** para ser
 
 Para redigir o TR: identifique o tipo de objeto (compras vs. serviços/obras, TIC vs. não-TIC) para escolher o arquivo certo dentre os quatro acima. A modalidade e o dispositivo legal **já vêm definidos pela triagem do Passo 1** (`references/enquadramento-legal-triagem.md`) — reaproveite-os em vez de perguntar de novo; se o usuário chegou direto ao TR sem ETP, conduza a triagem agora, porque sem ela não é possível escolher as alternativas "OU" do modelo. Da mesma forma, **reaproveite a resposta do Bloco 0.5 do ETP** (`references/etp-topicos.md`) sobre Sistema de Registro de Preços (SRP) — não pergunte de novo; se o usuário chegou direto ao TR sem ETP, pergunte agora. Essa resposta muda alternativas "OU" do próprio modelo (ex.: critério de aceitabilidade de preços unitários máximos por grupo de itens, e a adequação orçamentária, exigível no SRP apenas antes da assinatura do contrato, não na elaboração do TR). Considere também as características do caso (regime de execução, dedicação exclusiva de mão de obra, etc.) para saber quais alternativas "OU" do modelo usar. **Risque as alternativas não escolhidas, não as apague** — ver "Regra de ouro" acima.
 
+A coluna ESPECIFICAÇÃO da tabela do item 1.1 e as seções de marca, amostra, carta de solidariedade e garantia são preenchidas com o fluxo da seção "Especificação técnica de itens" (abaixo). Se o ETP já trouxe as especificações, reaproveite-as.
+
 Consulte `references/ipp-agu-orientacoes.md` (seção "Termo de Referência — como preencher") para o detalhamento do que a AGU espera em cada elemento, especialmente: o prazo de vigência deve ser a **soma** dos prazos de execução, reparo, recebimento provisório, definitivo e pagamento (não um número arbitrário); a diferença entre **garantia do produto/serviço (CDC)** e **garantia de execução do contrato** (arts. 96 a 102), que devem aparecer separadamente; e a definição da forma de aferição/medição do serviço para pagamento com base em resultado, com unidade de medida que evite remunerar por horas ou postos de trabalho.
 
 Pontos jurídicos que já geraram erro em rascunhos desta skill. Confira-os em todo TR:
@@ -168,6 +172,17 @@ O parecer não se esgota no enquadramento e no preço. O mesmo arquivo traz, nas
 ### Passo 5: Documentos de menor importância
 
 Se o usuário mencionar outros documentos com template próprio (não cobertos acima), pergunte qual é o template e, se ainda não estiver salvo em `references/`, ofereça para criar um novo arquivo de referência para reutilização futura.
+
+## Especificação técnica de itens
+
+A descrição de cada item (bem ou serviço) segue o fluxo de `references/especificacao/fluxo-especificacao.md`: entender o item (PN, CFF/CAGE, opcionais), pesquisar datasheets e equivalentes, decidir com o usuário se a marca entra só como referência, é exigida ou fica de fora, redigir por desempenho e verificar com `scripts/verificar_especificacao.py`. Use-o em dois momentos:
+
+- **Dentro da cadeia**: no ETP, para os requisitos (tópico 4, em texto corrido), para o levantamento de mercado (tópico 5, fabricantes e modelos equivalentes com link) e para a justificativa de marca exigida; no TR, para a coluna ESPECIFICAÇÃO e o CATMAT/CATSER da tabela do item 1.1, e para preencher as seções do modelo AGU sobre marca, amostra, carta de solidariedade e garantia.
+- **Avulso**: quando o usuário só quer especificar ou revisar itens, sem processo em curso.
+
+Formato de cada especificação, em um único parágrafo: `[características do item].{ Referência: [marca/modelo]{, similar ou superior}.}`. Variante A = marca só como referência (art. 41, I, "d"), termina com ", similar ou superior"; variante B = marca exigida e justificada no ETP (art. 41, I, "a" a "c"), termina só com a marca; variante C = sem marca.
+
+Três regras que não cedem: **não exclua produto pela origem** (art. 9º, I); **não invente** modelos, opcionais ou códigos (marque `[VALIDAR]`); e **a lista de fabricantes para pesquisa de mercado vai para o ETP, nunca para o edital nem para o TR**. As condições gerais (calibração, garantia, documentação etc.) não viram bloco solto no TR: entram nas seções do modelo AGU indicadas em `references/especificacao/condicoes_gerais.md`.
 
 ## Avaliação de completude e conformidade
 
