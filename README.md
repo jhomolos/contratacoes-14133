@@ -57,7 +57,8 @@ skills/contratacoes-14133/
       condicoes_gerais.md               #   CG-1 a CG-12 e em que seção do modelo AGU cada uma entra
       exemplos.md                       #   casos resolvidos
   scripts/
-    modelo_docx_para_md.py              # converte modelo AGU .docx em Markdown (e extrai as notas com --notas)
+    modelo_docx_para_md.py              # converte modelo AGU .docx em Markdown (corpo, --notas, --legenda)
+    verificar_modelos_agu.py            # confere no site da AGU se os 4 modelos de TR estão na versão vigente (checagem mensal automática)
     verificar_especificacao.py          # confere formato e erros comuns das especificações (texto, .txt ou .xlsx)
 
 lei-14133-2021.md          # Lei nº 14.133/2021 convertida para Markdown (fonte: planalto.gov.br)

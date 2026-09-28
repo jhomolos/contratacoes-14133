@@ -1,5 +1,7 @@
 # Modelo de Termo de Referência — Aquisições (Compras) de TIC
 
+> **Versão local**: set/2025 · verificada no site da AGU em 2026-09-28.
+
 Fonte: modelo oficial da Advocacia-Geral da União (AGU) para a Lei nº 14.133/2021, versão de setembro/2025, fornecido pelo usuário. Cobre licitação e contratação direta (alternativas "OU" no texto).
 
 ## Quando usar este arquivo

@@ -10,8 +10,11 @@ Preserva o que a conversão em texto puro perde:
 
 Uso:  python modelo_docx_para_md.py MODELO.docx > saida.md
       python modelo_docx_para_md.py --notas MODELO.docx > notas.md
-O segundo modo extrai os comentários do Word (notas explicativas da AGU), cada um
-com o número do item do modelo em que está ancorado.
+      python modelo_docx_para_md.py --legenda MODELO.docx > legenda.md
+O modo --notas extrai os comentários do Word (notas explicativas da AGU), cada um com o
+número do item do modelo em que está ancorado. O modo --legenda gera a tabela de cores e
+realces (preto/vermelho + só os realces de fato presentes no modelo), para colar no início
+do arquivo de referência ao atualizar um modelo para uma versão nova da AGU.
 """
 import re
 import sys
@@ -50,6 +53,22 @@ COLOR_MAP = {'FF0000': 'red', 'EE0000': 'red', 'FF3333': 'red', 'C00000': 'red',
 HL_MAP = {'yellow': 'yellow', 'cyan': 'cyan', 'green': 'lime', 'magenta': 'magenta',
           'darkCyan': 'darkcyan', 'lightGray': 'lightgray', 'darkGray': 'darkgray',
           'red': 'red', 'blue': 'blue', 'darkYellow': 'olive', 'darkGreen': 'green'}
+# Significado de cada realce, na legenda oficial da AGU ("Orientações para uso do modelo").
+# Usado por Converter.legenda() — só entra na tabela o realce de fato presente no modelo convertido.
+HL_ROWS = [
+    ('yellow', 'Realce <span style="background:yellow">amarelo</span>',
+     'Alterado em relação à versão anterior do modelo (informativo; não muda a aplicabilidade).'),
+    ('cyan', 'Realce <span style="background:cyan">turquesa</span>',
+     'Aplicável **exclusivamente ao Sistema de Registro de Preços (SRP)**. Fora de SRP, riscar.'),
+    ('lime', 'Realce <span style="background:lime">verde brilhante</span>',
+     'Cláusulas de **margem de preferência** (Decreto nº 11.890/2024).'),
+    ('magenta', 'Realce <span style="background:magenta">rosa</span>',
+     'Serviços com **dedicação exclusiva de mão de obra**. Sem esse regime, riscar.'),
+    ('darkcyan', 'Realce <span style="background:darkcyan;color:white">azul-petróleo</span>',
+     '**Obras e serviços de engenharia**. Para serviço comum, riscar.'),
+    ('lightgray', 'Realce <span style="background:lightgray">cinza</span>',
+     'Pela legenda geral do modelo, item 5, indica rosa para esse mesmo fim; o cinza aparece em poucos trechos.'),
+]
 
 
 class Styles:
@@ -402,9 +421,35 @@ class Converter:
                 continue
             head = '### %s' % where[0].upper() + where[1:]
             if snippet:
-                head += ' — “%s”' % snippet
+                head += ' — "%s"' % snippet
             out.append(head + '\n\n' + '\n\n'.join(esc(x) for x in paras))
         return '\n\n'.join(out) + '\n'
+
+    def legenda(self, docx_path=''):
+        """Tabela de legenda de cores/realces do modelo (para o cabeçalho do arquivo de referência).
+
+        Reproduz a legenda oficial da AGU ("Orientações para uso do modelo"): preto = texto
+        invariável, vermelho itálico = texto a preencher/adotar, e um realce por cor
+        efetivamente presente no corpo convertido (as cores usadas variam por modelo).
+        """
+        if not self.out:
+            self.convert()
+        body = '\n\n'.join(self.out)
+        rows = [
+            ('Texto preto (sem itálico)',
+             'Redação que se espera invariável. **Qualquer alteração exige justificativa nos autos.**'),
+            ('<span style="color:red"><i>Vermelho itálico</i></span>',
+             'Texto a preencher ou adotar conforme oportunidade e conveniência, de acordo com o objeto. '
+             'São as previsões "feitas para variar"; inclui as alternativas "OU" e os campos entre colchetes.'),
+        ]
+        for key, label, meaning in HL_ROWS:
+            if 'background:%s' % key in body:
+                rows.append((label, meaning))
+        linhas = ['| No modelo | Significado |', '|---|---|']
+        linhas += ['| %s | %s |' % r for r in rows]
+        docx_nota = (' (`%s`)' % docx_path) if docx_path else ''
+        return ('Legenda da própria AGU ("Orientações para uso do modelo – leitura obrigatória")%s:\n\n' % docx_nota
+                + '\n'.join(linhas) + '\n')
 
     def table(self, tbl):
         rows = []
@@ -456,4 +501,10 @@ if __name__ == '__main__':
     sys.stdout.reconfigure(encoding='utf-8')
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
     conv = Converter(args[0])
-    print(conv.notas() if '--notas' in sys.argv else conv.convert(), end='')
+    if '--notas' in sys.argv:
+        saida = conv.notas()
+    elif '--legenda' in sys.argv:
+        saida = conv.legenda(args[0])
+    else:
+        saida = conv.convert()
+    print(saida, end='')

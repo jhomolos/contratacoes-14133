@@ -1,5 +1,7 @@
 # Modelo de Termo de Referência — Aquisições (Compras), Exceto TIC
 
+> **Versão local**: dez/2025 · verificada no site da AGU em 2026-09-28.
+
 Fonte: modelo oficial da Advocacia-Geral da União (AGU) para a Lei nº 14.133/2021, versão de dezembro/2025, fornecido pelo usuário. Confirmado (por comparação de hash dos arquivos) que a AGU disponibiliza o mesmo arquivo tanto na seção de licitação quanto na de contratação direta do site — este único modelo cobre **licitação (pregão/concorrência) e contratação direta (dispensa/inexigibilidade)**, com a escolha feita através das alternativas "OU" presentes no próprio texto.
 
 ## Quando usar este arquivo
