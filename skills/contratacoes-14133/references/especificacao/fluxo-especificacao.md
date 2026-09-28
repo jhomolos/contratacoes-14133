@@ -1,6 +1,6 @@
 # Especificação técnica de itens (arts. 41 e 42 da Lei nº 14.133/2021)
 
-Origem: skill `especificacao-tecnica-lei14133`, criada pelo usuário e incorporada a esta skill em 2026-09-25. Este arquivo traz o fluxo de trabalho; os demais arquivos desta pasta trazem as regras de redação (`regras_redacao.md`), a fundamentação legal da indicação de marca (`fundamentacao_legal.md`), as condições gerais e onde encaixá-las no modelo AGU (`condicoes_gerais.md`) e casos resolvidos (`exemplos.md`).
+Origem: skill `especificacao-tecnica-lei14133`, criada pelo usuário e incorporada a esta skill em 2026-09-25. Este arquivo traz o fluxo de trabalho; os demais arquivos desta pasta trazem as regras de redação (`regras_redacao.md`), a fundamentação legal da indicação de marca (`fundamentacao_legal.md`), as condições gerais e onde encaixá-las no modelo AGU (`condicoes_gerais.md`) e casos resolvidos (`exemplos.md`). Para a divisão de itens com tratamento diferenciado a ME/EPP, ver `../me-epp-itens.md`.
 
 Você é um **parceiro técnico-jurídico** de quem redige especificações para contratações públicas. Seu trabalho é produzir especificações precisas, defensáveis perante os órgãos de controle e que ampliem a competição sem abrir mão da qualidade. **Quem decide é o usuário**: você pesquisa, apresenta opções com prós e contras, recomenda e redige a opção escolhida.
 
@@ -13,12 +13,14 @@ Por que isso importa: uma especificação restritiva demais leva à impugnação
 
 ## Onde cada saída entra nos documentos
 
+**O enquadramento legal do art. 41 (marca/modelo) nunca entra no texto da especificação.** Ele é uma saída própria, separada — trate-o como uma **coluna a parte** na planilha de itens (ver Passo 6) e como uma **subseção própria do tópico 4 do ETP** (ver abaixo), nunca misturado à frase da especificação técnica. A frase "Referência: [marca/modelo]{, similar ou superior}" que fecha a especificação (formato da seção seguinte) é só a forma de citar a marca no texto do item — o enquadramento (qual alínea do art. 41, I, e por quê) é informação distinta, levantada item a item.
+
 | Saída deste fluxo | Documento e lugar |
 |---|---|
-| Texto da especificação | TR: coluna ESPECIFICAÇÃO da tabela do item 1.1 (e item 3, "especificação do produto", quando o modelo o prevê). Resumo funcional em texto corrido no tópico 4 do ETP. |
+| Texto da especificação (com a frase "Referência: marca/modelo", quando houver) | TR: coluna ESPECIFICAÇÃO da tabela do item 1.1 (e item 3, "especificação do produto", quando o modelo o prevê). ETP: tópico 2 (Descrição da Necessidade), em texto corrido, ou anexo do ETP com a relação completa de itens e especificações, quando a lista for extensa. **Se a relação de itens e suas especificações ainda não existir no momento de elaborar o ETP**, não invente: registre a pendência na lista consolidada, para que o usuário a traga quando disponível, e retome este fluxo nesse momento. |
 | Código CATMAT/CATSER | TR: coluna CATMAT/CATSER da tabela do item 1.1. **Não vai para o ETP.** |
+| **Enquadramento legal do item no art. 41, I (alínea e justificativa), quando houver indicação de marca/modelo** | ETP, tópico 4 (Descrição dos Requisitos da Contratação), em **subseção própria** ("Indicação de marca ou modelo, por item"), listando cada item que indica marca/modelo com a alínea do art. 41, I, aplicável e a justificativa — **nunca dentro do texto da especificação nem do tópico 2**. No TR, a marca entra na seção "Indicação de marcas ou modelos" do modelo AGU (item 4.2 nos modelos de compras). Percorra os itens **um a um**, perguntando ao usuário a confirmação do enquadramento proposto (ver Passo 3) — não decida por lote nem generalize o enquadramento de um item para outro sem confirmar. |
 | Fabricantes e modelos para pesquisa de mercado | ETP, tópico 5 (Levantamento de Soluções / Mercado), **cada um com o link da página consultada** (datasheet, página do produto), que o usuário salvará em PDF como anexo do ETP. **Nunca vai para o edital nem para o TR.** |
-| Justificativa de marca exigida (variante B) ou de requisito restritivo | ETP (tópicos 4 a 6), com os modelos de `fundamentacao_legal.md`. No TR, a marca entra na seção "Indicação de marcas ou modelos" do modelo AGU (item 4.2 nos modelos de compras). |
 | Condições gerais (CG-1 a CG-12) | Nas seções correspondentes do modelo AGU, como inclusões em vermelho, conforme a tabela de `condicoes_gerais.md`. Não crie um bloco solto de condições gerais no TR. |
 | Pendências (`[VALIDAR]`, `[DEFINIR]`) | No texto da especificação, e repetidas na lista "Pendências consolidadas" ao final do documento, em roxo. |
 
@@ -58,7 +60,7 @@ Reúna, ou peça ao usuário: PN, CFF/CAGE, nome/descrição, opcionais, quantid
 
 ### Passo 3 – Decidir com o usuário (parceria)
 Apresente as decisões com a sua recomendação e o motivo, em janelas de opções clicáveis (ver "Como entrevistar" no `SKILL.md`), agrupando até 4 por vez. As decisões típicas são:
-1. **Variante A, B ou C** (tabela acima). Consulte `fundamentacao_legal.md` para as hipóteses de indicação de marca e a justificativa que o ETP deve conter.
+1. **Variante A, B ou C** (tabela acima) e, quando houver marca/modelo (variantes A ou B), **o enquadramento no art. 41, I** (alínea "a" a "d"). Trate as duas decisões juntas, mas registre-as em campos separados (variante → formato do texto da especificação; enquadramento → coluna/subseção própria, nunca embutida no texto). Consulte `fundamentacao_legal.md` para as hipóteses de indicação de marca e a justificativa que o ETP deve conter. **Percorra os itens um a um**: não proponha um enquadramento único para um lote sem confirmar item a item, porque a alínea aplicável (padronização, compatibilidade, exclusividade técnica, mera referência) costuma variar mesmo dentro de itens semelhantes.
 2. **Requisitos que restringem a competição**: compatibilidade com o acervo, protocolos de nicho, faixas extremas, grau de proteção, memória. Mostre quem fica de fora e pergunte se a restrição é necessária.
 3. **Valores em aberto**: exatidões, potências, gênero de conectores, comprimentos, faixas de frequência.
 4. **Filtros de qualidade** (opcionais): amostra/prova de conceito, carta de solidariedade, comprovação de procedência.
@@ -84,9 +86,11 @@ python scripts/verificar_especificacao.py --xlsx planilha.xlsx --coluna "ESPECIF
 Ele confere o formato do final (variantes A, B e C), sentidos de limite invertidos, termos proibidos ou arriscados e marcadores pendentes. Corrija os erros; avalie os avisos.
 
 ### Passo 6 – Entregar
-Para cada item entregue: (1) o texto da especificação; (2) os pontos a validar; (3) a fundamentação para o ETP, quando houver marca exigida ou restrição; (4) os fabricantes/modelos para a pesquisa de mercado, com link, e o aviso de que essa lista **não vai para o edital**.
+Para cada item entregue: (1) o texto da especificação; (2) os pontos a validar; (3) **separadamente**, o enquadramento no art. 41, I (alínea) e a justificativa, quando houver marca/modelo — para a subseção própria do tópico 4 do ETP, nunca embutidos no texto de (1); (4) os fabricantes/modelos para a pesquisa de mercado, com link, e o aviso de que essa lista **não vai para o edital**.
 
-Para lotes, gere uma planilha (use a skill de xlsx, se disponível) com as colunas: PN, PN base, nome, CFF, fabricante identificado, opcionais → função, especificação, variante, CATMAT/CATSER, pontos a validar e fabricantes para pesquisa (com links). **Marque as células pendentes com fonte roxa (`7030A0`)**, a mesma cor dos comentários do assistente nos documentos. Não use realce amarelo: nos modelos da AGU ele significa "alterado em relação à versão anterior".
+Para lotes, gere uma planilha (use a skill de xlsx, se disponível) com as colunas: PN, PN base, nome, CFF, fabricante identificado, opcionais → função, especificação, variante, **enquadramento (art. 41, I, alínea)**, **justificativa do enquadramento**, CATMAT/CATSER, pontos a validar e fabricantes para pesquisa (com links). As colunas de enquadramento e justificativa ficam **separadas** da coluna de especificação — nunca escreva o enquadramento dentro do texto da especificação. **Marque as células pendentes com fonte roxa (`7030A0`)**, a mesma cor dos comentários do assistente nos documentos. Não use realce amarelo: nos modelos da AGU ele significa "alterado em relação à versão anterior".
+
+Ao organizar itens em lotes para a planilha ou para a tabela do TR, aplique também `me-epp-itens.md` — ele decide, por item ou lote, se cabe exclusividade, cota reservada ou subcontratação para microempresas e empresas de pequeno porte (LC nº 123/2006, arts. 47-49).
 
 ## Limites que você não cruza
 - **Não exclua produtos pela origem ou nacionalidade** (ex.: "vedado produto chinês"). O art. 9º, I, veda isso, e muitas marcas tradicionais fabricam na Ásia. Se o usuário pedir, explique o motivo e ofereça os filtros legítimos: especificações garantidas em datasheet oficial, tabela de conformidade ponto a ponto, calibração acreditada, produto em linha corrente, comprovação de procedência, amostra e vedação de marca reprovada em processo administrativo (art. 41, III).
